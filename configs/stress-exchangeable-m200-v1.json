@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "phase": "exploratory-stress-exchangeable-m200-v1",
+  "seed": 84173001,
+  "train_count": 200,
+  "test_count": 1000,
+  "replicates": 8,
+  "conditions": [
+    {
+      "name": "exchangeable-n2-rho0-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n2-rho0-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n2-rho0.1-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n2-rho0.1-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n2-rho0.25-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n2-rho0.25-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n2-rho0.5-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n2-rho0.5-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n2-rho0.75-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n2-rho0.75-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n2-rho1-a0.5",
+      "n_forecasters": 2,
+      "signal_strength": 0.5,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n2-rho1-a1",
+      "n_forecasters": 2,
+      "signal_strength": 1.0,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n5-rho0-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n5-rho0-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n5-rho0.1-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n5-rho0.1-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n5-rho0.25-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n5-rho0.25-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n5-rho0.5-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n5-rho0.5-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n5-rho0.75-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n5-rho0.75-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n5-rho1-a0.5",
+      "n_forecasters": 5,
+      "signal_strength": 0.5,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n5-rho1-a1",
+      "n_forecasters": 5,
+      "signal_strength": 1.0,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n10-rho0-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n10-rho0-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n10-rho0.1-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n10-rho0.1-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n10-rho0.25-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n10-rho0.25-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n10-rho0.5-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n10-rho0.5-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n10-rho0.75-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n10-rho0.75-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n10-rho1-a0.5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n10-rho1-a1",
+      "n_forecasters": 10,
+      "signal_strength": 1.0,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n20-rho0-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n20-rho0-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 0
+    },
+    {
+      "name": "exchangeable-n20-rho0.1-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n20-rho0.1-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 0.1
+    },
+    {
+      "name": "exchangeable-n20-rho0.25-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n20-rho0.25-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 0.25
+    },
+    {
+      "name": "exchangeable-n20-rho0.5-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n20-rho0.5-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 0.5
+    },
+    {
+      "name": "exchangeable-n20-rho0.75-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n20-rho0.75-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 0.75
+    },
+    {
+      "name": "exchangeable-n20-rho1-a0.5",
+      "n_forecasters": 20,
+      "signal_strength": 0.5,
+      "overlap": 1
+    },
+    {
+      "name": "exchangeable-n20-rho1-a1",
+      "n_forecasters": 20,
+      "signal_strength": 1.0,
+      "overlap": 1
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "phase": "development-precision-v0",
+  "seed": 20261016,
+  "train_count": 200,
+  "test_count": 10000,
+  "replicates": 30,
+  "conditions": [
+    {
+      "name": "primary-precision-pilot",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    }
+  ]
+}

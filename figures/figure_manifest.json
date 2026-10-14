@@ -1,0 +1,16 @@
+{
+  "input_sha256": {
+    "reports/stress-suite-v1.json": "e07bd3e53a2084e12a7020bab2892e67142d223985927736d74c3d56cfd09d12",
+    "reports/stress-v1/stress-groups-m5000-v1-signs.json": "c65f96548388bf994b4db941624903f8247c13a7ebd7f47423e8278f81f0ca91"
+  },
+  "matplotlib_version": "3.11.2",
+  "output_sha256": {
+    "group_decision_disagreement.png": "b1f29a3d0de817b6be775d16a8fefea3177c4743b844c9027f0957057473c494",
+    "group_decision_disagreement.svg": "82ac6f86115638674b9187ce1f9ddb300e75a10f9b7d14455311968378032706",
+    "group_oracle_regret.png": "b3d5f4737ede4aefabf969e917cc7be3f21e31c1dc2b2dbdb299dd4f3b644227",
+    "group_oracle_regret.svg": "d53626d419257e079ceb16a8f4967055bf052ef7b705dc038822400b9ddd2b2b"
+  },
+  "schema_version": 1,
+  "script_sha256": "5fcfb70eec23d873b7bdb4be5e0777deef196f0fbb2e61c5412865623c63365d",
+  "status": "exploratory_figure_artifacts"
+}

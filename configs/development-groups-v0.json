@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "phase": "development-groups-v0",
+  "seed": 20261015,
+  "train_count": 200,
+  "test_count": 2000,
+  "replicates": 3,
+  "conditions": [
+    {
+      "name": "groups-5-5",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.9,
+      "group_ids": [0, 0, 0, 0, 0, 1, 1, 1, 1, 1]
+    },
+    {
+      "name": "groups-9-1",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.9,
+      "group_ids": [0, 0, 0, 0, 0, 0, 0, 0, 0, 1]
+    },
+    {
+      "name": "groups-4-3-2-1",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.9,
+      "group_ids": [0, 0, 0, 0, 1, 1, 1, 2, 2, 3]
+    }
+  ]
+}

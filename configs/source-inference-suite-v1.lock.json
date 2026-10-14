@@ -1,0 +1,26 @@
+{
+  "config_sha256": {
+    "configs/source-inference-primary-v1.json": "417322128e9e2627bc66049bb5883a65fbe16f8046a4e2cee2d39a0c2c00de76",
+    "configs/source-inference-sensitivity-m100-v1.json": "452559414886fc0b5ac76e0c2bf4e7728fd6027bfabc3cc581db7dc65bdc3083",
+    "configs/source-inference-sensitivity-m2000-v1.json": "b2613a261d765b0c03361ac76895082886458de08edba0812d19331f7aa7c979",
+    "configs/source-inference-sensitivity-m400-v1.json": "1e77d6dc6dc5a82da3ae3b451e568c568a4eaedd89a66ae1f81be7dd743aa911"
+  },
+  "created_at": "2026-10-14T23:10:54.008416+00:00",
+  "protocol_path": "docs/source_inference_protocol.md",
+  "protocol_sha256": "22b7be3d7d2aa4d383d042e54764c328c0d09a8a255c0f73dcfdbd8fc620a80d",
+  "python_version": "3.14.7",
+  "schema_version": 1,
+  "source_sha256": {
+    "scripts/source_inference_lock.py": "b2da50e0987f4a0b9f6523ecf4703a13b0424ded9d4786edde894aaf8cec7d3d",
+    "shared_evidence/evaluate.py": "d9ac3c35763eb6a0aebf17fd0ab249287a57b73888cc6b1f2d7b0b36e135f7fb",
+    "shared_evidence/groups.py": "99d2765941f113fd47cc15861d4fc975bcb80768f589b677df1a6ab13a7cc5a6",
+    "shared_evidence/ledger.py": "5e066bc506c2c5f9a1f4f0ee13a639d305440822979c97246c4fd30238d3da19",
+    "shared_evidence/model.py": "7cdb2a2702c46599ba90f659667787894dd2d53d17cf170371ec3ab594720674",
+    "shared_evidence/simulate.py": "eb395735b9468d8901de5d02f04db48d5377df69dfd65ba5a1fce06a060f60bf",
+    "shared_evidence/source_inference.py": "eb91c266135ab4311ca5749c933db21999e78e3ece6ed357a9bb25d3005a378b",
+    "shared_evidence/source_inference_analysis.py": "2034c9fb4fbbfa0844a29e4c24e89cd2dcd97e0d25b0ac2a63d1d502e3071cfa",
+    "shared_evidence/source_inference_experiment.py": "b795f43aa75f39466a72053d3dabb2b48f60db459e2752b33982777d0d74b9a2",
+    "shared_evidence/source_inference_verify.py": "e06d0ffbee9d7e525a50c25453db90c760d44dbb3351751cf40bb6f2bb96ed6e"
+  },
+  "status": "frozen_before_execution"
+}

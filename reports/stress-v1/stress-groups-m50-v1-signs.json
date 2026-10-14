@@ -1,0 +1,982 @@
+{
+  "cells": {
+    "groups-4-3-2-1-rho0": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-4-3-2-1-rho0.5": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.10118198747328004,
+      "opposite_sign_count": 1180,
+      "opposite_sign_fraction": 0.049166666666666664,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 97,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 104,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 99,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 104,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 100,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 102,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 91,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 99,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 83,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 102,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 102,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 97,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-4-3-2-1-rho0.9": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.12451591636214912,
+      "opposite_sign_count": 1898,
+      "opposite_sign_fraction": 0.07908333333333334,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 147,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 188,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 169,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 159,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 153,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 161,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 173,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 136,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 155,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 150,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 147,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 160,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-4-3-2-1-rho1": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.12366527398102564,
+      "opposite_sign_count": 2053,
+      "opposite_sign_fraction": 0.08554166666666667,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 182,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 178,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 180,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 161,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 173,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 169,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 186,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 165,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 163,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 157,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 172,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 167,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-5-5-rho0": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-5-5-rho0.5": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-5-5-rho0.9": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-5-5-rho1": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-9-1-rho0": {
+      "mean_oracle_probability_distance_from_half_on_opposite": null,
+      "opposite_sign_count": 0,
+      "opposite_sign_fraction": 0.0,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 0,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-9-1-rho0.5": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.12095907625891757,
+      "opposite_sign_count": 2886,
+      "opposite_sign_fraction": 0.12025,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 244,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 242,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 226,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 215,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 249,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 229,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 228,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 260,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 240,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 234,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 267,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 252,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-9-1-rho0.9": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.1385111613944077,
+      "opposite_sign_count": 4139,
+      "opposite_sign_fraction": 0.17245833333333332,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 324,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 328,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 334,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 322,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 357,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 340,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 342,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 362,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 359,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 339,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 372,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 360,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    },
+    "groups-9-1-rho1": {
+      "mean_oracle_probability_distance_from_half_on_opposite": 0.14269030463396543,
+      "opposite_sign_count": 4338,
+      "opposite_sign_fraction": 0.18075,
+      "questions": 24000,
+      "replicates": [
+        {
+          "opposite_sign_count": 329,
+          "questions": 2000,
+          "replicate": 0,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 363,
+          "questions": 2000,
+          "replicate": 1,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 338,
+          "questions": 2000,
+          "replicate": 2,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 329,
+          "questions": 2000,
+          "replicate": 3,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 368,
+          "questions": 2000,
+          "replicate": 4,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 342,
+          "questions": 2000,
+          "replicate": 5,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 357,
+          "questions": 2000,
+          "replicate": 6,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 393,
+          "questions": 2000,
+          "replicate": 7,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 368,
+          "questions": 2000,
+          "replicate": 8,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 351,
+          "questions": 2000,
+          "replicate": 9,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 399,
+          "questions": 2000,
+          "replicate": 10,
+          "tie_count": 0
+        },
+        {
+          "opposite_sign_count": 401,
+          "questions": 2000,
+          "replicate": 11,
+          "tie_count": 0
+        }
+      ],
+      "tie_count": 0
+    }
+  },
+  "definition": "strict opposite signs of total report logit and group-oracle logit",
+  "ledger_sha256": "3b78b17e1b8c047e35dae5e3f1b22b0f9b881dd79d32b1756fc5471af2c61945",
+  "phase": "exploratory-stress-groups-m50-v1",
+  "schema_version": 1,
+  "scope": "diagnostic of nonnegative scalar decision limitation; not an inference interval",
+  "summary_sha256": "ec158382da9eee32665a99c0337b0f3f5ae9ebc5c1c837e0c7e4adffd9cb795a"
+}

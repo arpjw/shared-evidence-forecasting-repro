@@ -1,0 +1,4897 @@
+{
+  "lock_sha256": "67c8cd2c92cbddc4f82aedb39cabdb4ad0ad9493ed9348d95ec64ba1d6dfafe1",
+  "multiplicity_note": "Only the two primary contrasts use simultaneous 97.5% intervals; sensitivity intervals are descriptive.",
+  "phases": {
+    "source-inference-primary-v1": {
+      "bootstrap_resamples": 10000,
+      "conditions": {
+        "groups-9-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  5.31645920707444e-05,
+                  0.00028346487003849826
+                ],
+                "interval_level": 0.975,
+                "mean": 0.000151680329501902,
+                "replicate_sd": 0.0002917158055955261
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00023940655563448306,
+                  0.001114851665490564
+                ],
+                "interval_level": 0.975,
+                "mean": 0.0006223491600276631,
+                "replicate_sd": 0.0011081562938340017
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.02736049082833747,
+                  -0.025636780840237954
+                ],
+                "interval_level": 0.975,
+                "mean": -0.0265144466209712,
+                "replicate_sd": 0.0021803230713364806
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.06940494211904437,
+                  -0.06500235589066232
+                ],
+                "interval_level": 0.975,
+                "mean": -0.06720397274370385,
+                "replicate_sd": 0.0054909413329009265
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.8992004047125857,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9908243710913444,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.18847621778684445,
+                "replicate_sd": 0.0017954667313021433
+              },
+              "log_loss": {
+                "mean": 0.5583210484078384,
+                "replicate_sd": 0.003990046630929195
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1590439992259998,
+                "replicate_sd": 0.0027731441475585023
+              },
+              "log_loss": {
+                "mean": 0.48288413695949994,
+                "replicate_sd": 0.007073459062552484
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.24691260401750095,
+                "replicate_sd": 0.004820021785439726
+              },
+              "log_loss": {
+                "mean": 1.5781719738768811,
+                "replicate_sd": 0.038807781620206365
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1591956795555017,
+                "replicate_sd": 0.002665967729509756
+              },
+              "log_loss": {
+                "mean": 0.4835064861195276,
+                "replicate_sd": 0.006684174902651672
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.18571012617647292,
+                "replicate_sd": 0.0023886072622818976
+              },
+              "log_loss": {
+                "mean": 0.5507104588632316,
+                "replicate_sd": 0.006230932769654257
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.06782632190373161,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 110,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 25222,
+              "scalar_opposite_repaired": 25153,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0007333333333333333,
+            "repaired_fraction_among_scalar_opposites": 0.997264293077472,
+            "scalar_opposite_fraction": 0.16814666666666667,
+            "test_questions": 150000
+          }
+        }
+      },
+      "phase": "source-inference-primary-v1",
+      "primary_gates": {
+        "beats_scalar": true,
+        "joint_pass": true,
+        "oracle_regret_below_0.01": true
+      },
+      "replicates": 30,
+      "resampling_unit": "independently_fitted_replicate",
+      "test_count": 5000,
+      "train_count": 400
+    },
+    "source-inference-sensitivity-m100-v1": {
+      "bootstrap_resamples": 10000,
+      "conditions": {
+        "groups-4-3-2-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  4.999352597942775e-05,
+                  0.0003360107738942953
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00018502875495161422,
+                "replicate_sd": 0.0002648507817896379
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00031370544639517246,
+                  0.0025600866996397333
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0013223162103164303,
+                "replicate_sd": 0.0020595725199430734
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": -7.105427357601002e-15,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16210467521463637,
+                "replicate_sd": 0.0010219420837374212
+              },
+              "log_loss": {
+                "mean": 0.5125043793839693,
+                "replicate_sd": 0.002161581952120391
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.03997146258665787,
+                "replicate_sd": 0.0022956409627806966
+              },
+              "log_loss": {
+                "mean": 0.13666973287121764,
+                "replicate_sd": 0.00763735618512368
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.03997146258665787,
+                "replicate_sd": 0.0022956409627806966
+              },
+              "log_loss": {
+                "mean": 0.13666973287121764,
+                "replicate_sd": 0.00763735618512368
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.04015649134160948,
+                "replicate_sd": 0.0023348800771576033
+              },
+              "log_loss": {
+                "mean": 0.13799204908153406,
+                "replicate_sd": 0.008168244619199645
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.04015649134160948,
+                "replicate_sd": 0.0023348800771576033
+              },
+              "log_loss": {
+                "mean": 0.13799204908153406,
+                "replicate_sd": 0.008168244619199645
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.001322316210316421,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0002718036710983861,
+                  0.00398605320398103
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0017116270311372979,
+                "replicate_sd": 0.0035729836559784236
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0015240492431667103,
+                  0.014017279800446472
+                ],
+                "interval_level": 0.95,
+                "mean": 0.006885951520499603,
+                "replicate_sd": 0.011563573223306636
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.007256018498783225,
+                  -0.003663620675412121
+                ],
+                "interval_level": 0.95,
+                "mean": -0.005719610809672781,
+                "replicate_sd": 0.003348860054341748
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.02211603214300947,
+                  -0.011768892324061855
+                ],
+                "interval_level": 0.95,
+                "mean": -0.017643429644972078,
+                "replicate_sd": 0.009602789409402637
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 0.9166666666666666,
+            "mean_inferred_group_count": 4.166666666666667,
+            "mean_inferred_overlap": 0.4987325542780467,
+            "mean_pair_error": 0.005555555555555556
+          },
+          "gap_fraction_closed": 0.7192774055713851,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16637073020752416,
+                "replicate_sd": 0.0016730601514844967
+              },
+              "log_loss": {
+                "mean": 0.5189861802712951,
+                "replicate_sd": 0.0035455289026860492
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.08731643161342299,
+                "replicate_sd": 0.0041275722859094414
+              },
+              "log_loss": {
+                "mean": 0.2831668077242934,
+                "replicate_sd": 0.012388449989554098
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.10027012001486647,
+                "replicate_sd": 0.004835124397730346
+              },
+              "log_loss": {
+                "mean": 0.37087714598020466,
+                "replicate_sd": 0.021205149629676626
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.08902805864456027,
+                "replicate_sd": 0.005239925907619868
+              },
+              "log_loss": {
+                "mean": 0.290052759244793,
+                "replicate_sd": 0.015775028161091907
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.09474766945423306,
+                "replicate_sd": 0.003765080939784873
+              },
+              "log_loss": {
+                "mean": 0.3076961888897651,
+                "replicate_sd": 0.011927550249104048
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.024529381165471653,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 168,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1157,
+              "scalar_opposite_repaired": 1092,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.007,
+            "repaired_fraction_among_scalar_opposites": 0.9438202247191011,
+            "scalar_opposite_fraction": 0.04820833333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -1.3075131223945206e-07,
+                  0.0006324590088313205
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00024304514360630933,
+                "replicate_sd": 0.000625874709223688
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  4.0986365074532904e-05,
+                  0.0027565331724225266
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0010219932633209518,
+                "replicate_sd": 0.0028941696159860072
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.016228766885553286,
+                  -0.013358735491809989
+                ],
+                "interval_level": 0.95,
+                "mean": -0.01469331999121705,
+                "replicate_sd": 0.0026817080180472977
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.04739163168220923,
+                  -0.03893532513723347
+                ],
+                "interval_level": 0.95,
+                "mean": -0.04284558448526208,
+                "replicate_sd": 0.007856562824341912
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 0.9041316694416861,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9767027650995851,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1693117785238787,
+                "replicate_sd": 0.002175584206728121
+              },
+              "log_loss": {
+                "mean": 0.523404138289952,
+                "replicate_sd": 0.004622869524668941
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.10670610055808544,
+                "replicate_sd": 0.003952817598768854
+              },
+              "log_loss": {
+                "mean": 0.34034050675698957,
+                "replicate_sd": 0.011577457204418277
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.13766494285092182,
+                "replicate_sd": 0.007563236306880152
+              },
+              "log_loss": {
+                "mean": 0.5646548511996321,
+                "replicate_sd": 0.036207846633859
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.10694914570169174,
+                "replicate_sd": 0.0040327908690393
+              },
+              "log_loss": {
+                "mean": 0.3413625000203105,
+                "replicate_sd": 0.01202150584051073
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12164246569290878,
+                "replicate_sd": 0.00518419878823944
+              },
+              "log_loss": {
+                "mean": 0.3842080845055726,
+                "replicate_sd": 0.013462891355319815
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.04386757774858302,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 21,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1880,
+              "scalar_opposite_repaired": 1875,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.000875,
+            "repaired_fraction_among_scalar_opposites": 0.9973404255319149,
+            "scalar_opposite_fraction": 0.07833333333333334,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  7.553504766406524e-05,
+                  0.0011900067086223654
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0004983253087028697,
+                "replicate_sd": 0.0011047116881869009
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00037892526446024755,
+                  0.005469467029537662
+                ],
+                "interval_level": 0.95,
+                "mean": 0.002413250604483145,
+                "replicate_sd": 0.004795143680934561
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.017489552825579652,
+                  -0.014111697790227726
+                ],
+                "interval_level": 0.95,
+                "mean": -0.015659276248463427,
+                "replicate_sd": 0.003142271179534629
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0502812043599043,
+                  -0.039552428123281885
+                ],
+                "interval_level": 0.95,
+                "mean": -0.04449710549555682,
+                "replicate_sd": 0.009749815785576828
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9485561226749867,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16999146799538947,
+                "replicate_sd": 0.0012643046316941724
+              },
+              "log_loss": {
+                "mean": 0.5244164786645172,
+                "replicate_sd": 0.002676082866118799
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.11034439425316254,
+                "replicate_sd": 0.0027076194086420612
+              },
+              "log_loss": {
+                "mean": 0.3513257260342906,
+                "replicate_sd": 0.007465055424782762
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.14412472652918945,
+                "replicate_sd": 0.004992365225040103
+              },
+              "log_loss": {
+                "mean": 0.6114254005532264,
+                "replicate_sd": 0.0272844755920312
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.11084271956186541,
+                "replicate_sd": 0.0027321352581273616
+              },
+              "log_loss": {
+                "mean": 0.35373897663877374,
+                "replicate_sd": 0.008013318374591497
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12650199581032884,
+                "replicate_sd": 0.003173982622396757
+              },
+              "log_loss": {
+                "mean": 0.39823608213433054,
+                "replicate_sd": 0.009852367060487806
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.04691035610003996,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2074,
+              "scalar_opposite_repaired": 2074,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.08641666666666667,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -7.67505490333227e-06,
+                  0.0002103397024962201
+                ],
+                "interval_level": 0.95,
+                "mean": 7.542222815024094e-05,
+                "replicate_sd": 0.00021418031516484416
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  9.891604408109507e-07,
+                  0.0011802785919571475
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0004440886368998892,
+                "replicate_sd": 0.0012078507752774866
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": 3.11972669919669e-14,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1628876425732511,
+                "replicate_sd": 0.0012901441334399698
+              },
+              "log_loss": {
+                "mean": 0.5141265117425461,
+                "replicate_sd": 0.002716752877044039
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.04282355850393047,
+                "replicate_sd": 0.003576662788791783
+              },
+              "log_loss": {
+                "mean": 0.14554787758918533,
+                "replicate_sd": 0.01038185376892894
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.04282355850393047,
+                "replicate_sd": 0.003576662788791783
+              },
+              "log_loss": {
+                "mean": 0.14554787758918533,
+                "replicate_sd": 0.01038185376892894
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.04289898073208071,
+                "replicate_sd": 0.003465678520029073
+              },
+              "log_loss": {
+                "mean": 0.14599196622608523,
+                "replicate_sd": 0.00983036187917167
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.04289898073208071,
+                "replicate_sd": 0.003465678520029073
+              },
+              "log_loss": {
+                "mean": 0.14599196622608523,
+                "replicate_sd": 0.00983036187917167
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0004440886368999031,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0001317022850220278,
+                  0.0008675676319383616
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00046795292714811126,
+                "replicate_sd": 0.0006813742713549832
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0006716940714210049,
+                  0.004068150023184059
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0022184486498614173,
+                "replicate_sd": 0.0031638616987199187
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0010678422834477276,
+                  1.30562364170315e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0004109365110266776,
+                "replicate_sd": 0.0010363429598265461
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.008030159353155838,
+                  2.6408091980294663e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0030497251907688296,
+                "replicate_sd": 0.008026160041907083
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.5071219240876614,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.5788960810761647,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16990097543274052,
+                "replicate_sd": 0.0018355065436316488
+              },
+              "log_loss": {
+                "mean": 0.5243759037386398,
+                "replicate_sd": 0.003861864783707964
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.12491932426544278,
+                "replicate_sd": 0.0042135213875907395
+              },
+              "log_loss": {
+                "mean": 0.39218079827845015,
+                "replicate_sd": 0.010953585524284288
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.14274955453124683,
+                "replicate_sd": 0.006559051615623644
+              },
+              "log_loss": {
+                "mean": 0.6047993231901574,
+                "replicate_sd": 0.031318043975038165
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.12538727719259088,
+                "replicate_sd": 0.00402631799217029
+              },
+              "log_loss": {
+                "mean": 0.3943992469283115,
+                "replicate_sd": 0.01014926235702923
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12579821370361757,
+                "replicate_sd": 0.004050366017272291
+              },
+              "log_loss": {
+                "mean": 0.39744897211908037,
+                "replicate_sd": 0.011632721148393765
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.005268173840630219,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.00014832681115332653,
+                  0.0018713105617517687
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0008228218199755633,
+                "replicate_sd": 0.0016983090898907687
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0005774529257132901,
+                  0.006218955294880819
+                ],
+                "interval_level": 0.95,
+                "mean": 0.002776727756297443,
+                "replicate_sd": 0.005572249138573143
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0013500535563511565,
+                  -1.0715720533377437e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0005732877314959366,
+                "replicate_sd": 0.0013115914540258254
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.007967048287663949,
+                  -8.502418426379703e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0032971588967310264,
+                "replicate_sd": 0.00760004831932989
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.8994062049468999,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.5428416901864735,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17751463172403756,
+                "replicate_sd": 0.0022525956790859863
+              },
+              "log_loss": {
+                "mean": 0.5376969033554723,
+                "replicate_sd": 0.004936626449972779
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.15816480805709884,
+                "replicate_sd": 0.004414061318340437
+              },
+              "log_loss": {
+                "mean": 0.4814486386159431,
+                "replicate_sd": 0.01217065521274181
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.19471854207880446,
+                "replicate_sd": 0.008011243231603609
+              },
+              "log_loss": {
+                "mean": 1.0025838985470703,
+                "replicate_sd": 0.05751733368604608
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1589876298770744,
+                "replicate_sd": 0.005248248135083474
+              },
+              "log_loss": {
+                "mean": 0.4842253663722405,
+                "replicate_sd": 0.014903027932408875
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.15956091760857033,
+                "replicate_sd": 0.005642925692824892
+              },
+              "log_loss": {
+                "mean": 0.4875225252689716,
+                "replicate_sd": 0.017869598820791418
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.006073886653028493,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0003285907899900654
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0001357087717707428,
+                "replicate_sd": 0.00031004864669021353
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  9.25185853854297e-18,
+                  0.001228958567120811
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0005242011978397187,
+                "replicate_sd": 0.0011528926273354104
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0019448276254185467,
+                  -0.0003587249298646962
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0010829429744212092,
+                "replicate_sd": 0.001466459088457079
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.011264854646072915,
+                  -0.0014903205667005466
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0058474060810432505,
+                "replicate_sd": 0.009053761894324651
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9177285769672197,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17806843120489876,
+                "replicate_sd": 0.0016579434918597414
+              },
+              "log_loss": {
+                "mean": 0.5381932775879897,
+                "replicate_sd": 0.0036479908852560076
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1613172988279151,
+                "replicate_sd": 0.0028048094117535905
+              },
+              "log_loss": {
+                "mean": 0.48868721936965226,
+                "replicate_sd": 0.00690589879832302
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.20215809283034977,
+                "replicate_sd": 0.005417447202714975
+              },
+              "log_loss": {
+                "mean": 1.0569762462058314,
+                "replicate_sd": 0.03616539695033302
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1614530075996858,
+                "replicate_sd": 0.0026462818287733606
+              },
+              "log_loss": {
+                "mean": 0.48921142056749195,
+                "replicate_sd": 0.006322385480611181
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.16253595057410702,
+                "replicate_sd": 0.0031213311039814725
+              },
+              "log_loss": {
+                "mean": 0.4950588266485352,
+                "replicate_sd": 0.011646326756909525
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.006371607278882918,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  8.859770588156661e-05,
+                  0.0007498207615152073
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00037137008595586617,
+                "replicate_sd": 0.0006218947942405115
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0005785643626612264,
+                  0.00469105001933861
+                ],
+                "interval_level": 0.95,
+                "mean": 0.002288774693376344,
+                "replicate_sd": 0.003915498749606104
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": 2.4424906541753444e-15,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1623889445120419,
+                "replicate_sd": 0.0012533725364953477
+              },
+              "log_loss": {
+                "mean": 0.51314070374036,
+                "replicate_sd": 0.0026569462284865503
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.040048898493911654,
+                "replicate_sd": 0.00327183370538451
+              },
+              "log_loss": {
+                "mean": 0.13877379404353327,
+                "replicate_sd": 0.01159715394037305
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.040048898493911654,
+                "replicate_sd": 0.00327183370538451
+              },
+              "log_loss": {
+                "mean": 0.13877379404353327,
+                "replicate_sd": 0.01159715394037305
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.040420268579867524,
+                "replicate_sd": 0.0034627994396137047
+              },
+              "log_loss": {
+                "mean": 0.14106256873690962,
+                "replicate_sd": 0.012826124631320173
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.040420268579867524,
+                "replicate_sd": 0.0034627994396137047
+              },
+              "log_loss": {
+                "mean": 0.14106256873690962,
+                "replicate_sd": 0.012826124631320173
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0022887746933763498,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.000110928385805018,
+                  0.0007608129489047962
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00038045830190986996,
+                "replicate_sd": 0.0006167298692739271
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0003026195924035078,
+                  0.0033241784783255976
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0015392048087153702,
+                "replicate_sd": 0.0028645027032787535
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.02054952370931384,
+                  -0.017491807773285503
+                ],
+                "interval_level": 0.95,
+                "mean": -0.01891480859392645,
+                "replicate_sd": 0.0028343500407200756
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.06010975668399717,
+                  -0.048501995733125615
+                ],
+                "interval_level": 0.95,
+                "mean": -0.05382666302245628,
+                "replicate_sd": 0.010643705366542485
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.47804942267903167,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9721993916286311,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17785659560367184,
+                "replicate_sd": 0.0020971300508269017
+              },
+              "log_loss": {
+                "mean": 0.5385024750830318,
+                "replicate_sd": 0.004471593870226283
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.14118218219387277,
+                "replicate_sd": 0.004353075462136711
+              },
+              "log_loss": {
+                "mean": 0.4349569835027846,
+                "replicate_sd": 0.012290815359667239
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.19632724849812666,
+                "replicate_sd": 0.004734226200378444
+              },
+              "log_loss": {
+                "mean": 0.9956086563876739,
+                "replicate_sd": 0.03532057499556733
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.14156264049578263,
+                "replicate_sd": 0.004251392833514905
+              },
+              "log_loss": {
+                "mean": 0.43649618831149994,
+                "replicate_sd": 0.011996612457089552
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.16047744908970907,
+                "replicate_sd": 0.002795609964297689
+              },
+              "log_loss": {
+                "mean": 0.4903228513339562,
+                "replicate_sd": 0.007493728032465761
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.05536586783117159,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 136,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2747,
+              "scalar_opposite_repaired": 2628,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.005666666666666667,
+            "repaired_fraction_among_scalar_opposites": 0.9566800145613397,
+            "scalar_opposite_fraction": 0.11445833333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  5.6092755878460705e-05,
+                  0.0009522487029382523
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00046112499089201686,
+                "replicate_sd": 0.0008294685425707116
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00013442591511781337,
+                  0.0037254303195917585
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0017885415239509844,
+                "replicate_sd": 0.0033691480076541444
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.027628358646203586,
+                  -0.024024972114974886
+                ],
+                "interval_level": 0.95,
+                "mean": -0.025682008308619764,
+                "replicate_sd": 0.003369696963978768
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.07140182349410783,
+                  -0.06088732217506236
+                ],
+                "interval_level": 0.95,
+                "mean": -0.06557671067681108,
+                "replicate_sd": 0.009921324766005083
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.8993558425647157,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9734500879085145,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.18900385780267778,
+                "replicate_sd": 0.0038590642511614356
+              },
+              "log_loss": {
+                "mean": 0.5595409080532328,
+                "replicate_sd": 0.00863596640653226
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1611391819167047,
+                "replicate_sd": 0.004210709298571225
+              },
+              "log_loss": {
+                "mean": 0.48801919125266097,
+                "replicate_sd": 0.011323697517319554
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.24662177368775937,
+                "replicate_sd": 0.00949180473100596
+              },
+              "log_loss": {
+                "mean": 1.572726085444832,
+                "replicate_sd": 0.07341605400976767
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.16160030690759672,
+                "replicate_sd": 0.003910746462843206
+              },
+              "log_loss": {
+                "mean": 0.48980773277661194,
+                "replicate_sd": 0.010223482956941993
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.1872823152162165,
+                "replicate_sd": 0.005843447678378026
+              },
+              "log_loss": {
+                "mean": 0.5553844434534231,
+                "replicate_sd": 0.015531753381956689
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.06736525220076212,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 18,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4019,
+              "scalar_opposite_repaired": 4013,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.00075,
+            "repaired_fraction_among_scalar_opposites": 0.9985070913162478,
+            "scalar_opposite_fraction": 0.16745833333333332,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0003418024764800056,
+                  0.0024955825683590786
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00133203526906598,
+                "replicate_sd": 0.002001719438644181
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0014330277998230445,
+                  0.00831480483541322
+                ],
+                "interval_level": 0.95,
+                "mean": 0.004605652874966559,
+                "replicate_sd": 0.006419241799684651
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.03223114542279504,
+                  -0.028417386528802897
+                ],
+                "interval_level": 0.95,
+                "mean": -0.030267124360702943,
+                "replicate_sd": 0.0035649304961846576
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.08166462983318551,
+                  -0.07086701496617738
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0761134691750917,
+                "replicate_sd": 0.010083261214817328
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.9999999999999999,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9429422327944753,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1921705233619053,
+                "replicate_sd": 0.002262017507523313
+              },
+              "log_loss": {
+                "mean": 0.5659138730269332,
+                "replicate_sd": 0.005128314872084411
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.16080711787146207,
+                "replicate_sd": 0.0030762490079989904
+              },
+              "log_loss": {
+                "mean": 0.4871518097427492,
+                "replicate_sd": 0.0071519856779981225
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.257050715031316,
+                "replicate_sd": 0.006242476589023757
+              },
+              "log_loss": {
+                "mean": 1.7246242059254964,
+                "replicate_sd": 0.051768622546729266
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.16213915314052804,
+                "replicate_sd": 0.00256239169441477
+              },
+              "log_loss": {
+                "mean": 0.4917574626177157,
+                "replicate_sd": 0.006935124168739357
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.192406277501231,
+                "replicate_sd": 0.003612946825678801
+              },
+              "log_loss": {
+                "mean": 0.5678709317928075,
+                "replicate_sd": 0.009572565197421215
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.08071912205005827,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4318,
+              "scalar_opposite_repaired": 4318,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.17991666666666667,
+            "test_questions": 24000
+          }
+        }
+      },
+      "phase": "source-inference-sensitivity-m100-v1",
+      "replicates": 12,
+      "resampling_unit": "independently_fitted_replicate",
+      "test_count": 2000,
+      "train_count": 100
+    },
+    "source-inference-sensitivity-m2000-v1": {
+      "bootstrap_resamples": 10000,
+      "conditions": {
+        "groups-4-3-2-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -1.5005853151864008e-05,
+                  4.7227186859663634e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 1.1273859845481576e-05,
+                "replicate_sd": 5.896650219624836e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  1.4785650044233837e-06,
+                  0.0006384884078733982
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0002685450240205699,
+                "replicate_sd": 0.0005874565413138839
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": 8.659739592076221e-15,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1624441166297472,
+                "replicate_sd": 0.00102558941660228
+              },
+              "log_loss": {
+                "mean": 0.5131814372313647,
+                "replicate_sd": 0.002172376298999236
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.042484175628870295,
+                "replicate_sd": 0.0026677201687404168
+              },
+              "log_loss": {
+                "mean": 0.1437651871679563,
+                "replicate_sd": 0.008793102723151841
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.042484175628870295,
+                "replicate_sd": 0.0026677201687404168
+              },
+              "log_loss": {
+                "mean": 0.1437651871679563,
+                "replicate_sd": 0.008793102723151841
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.042495449488715774,
+                "replicate_sd": 0.0026503313121527057
+              },
+              "log_loss": {
+                "mean": 0.14403373219197688,
+                "replicate_sd": 0.008722416731096493
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.042495449488715774,
+                "replicate_sd": 0.0026503313121527057
+              },
+              "log_loss": {
+                "mean": 0.14403373219197688,
+                "replicate_sd": 0.008722416731096493
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.00026854502402057223,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  6.090463470001156e-06,
+                  5.5620550136448155e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 2.7504858344060135e-05,
+                "replicate_sd": 4.665283784230804e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  7.375500382025735e-06,
+                  0.00020683363099554102
+                ],
+                "interval_level": 0.95,
+                "mean": 9.713019435397818e-05,
+                "replicate_sd": 0.00018896429803311846
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.007721104077069948,
+                  -0.006050260995484951
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0068908164671770125,
+                "replicate_sd": 0.0015415216793120226
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.023410112657912468,
+                  -0.018567637593514902
+                ],
+                "interval_level": 0.95,
+                "mean": -0.02101464079775932,
+                "replicate_sd": 0.004506273164623999
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 0.5001272559091036,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.995399239865274,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16653896270018206,
+                "replicate_sd": 0.0014794878963554849
+              },
+              "log_loss": {
+                "mean": 0.5194570831221543,
+                "replicate_sd": 0.003166284374028677
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.08689615977346904,
+                "replicate_sd": 0.0032286026841108267
+              },
+              "log_loss": {
+                "mean": 0.2831632623302804,
+                "replicate_sd": 0.00910413116246266
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.10025733270059294,
+                "replicate_sd": 0.004417100680636204
+              },
+              "log_loss": {
+                "mean": 0.3740646958118536,
+                "replicate_sd": 0.016705420483513252
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.0869236646318131,
+                "replicate_sd": 0.0032024749161823777
+              },
+              "log_loss": {
+                "mean": 0.28326039252463436,
+                "replicate_sd": 0.009008167031943546
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.09381448109899011,
+                "replicate_sd": 0.0033209318897341553
+              },
+              "log_loss": {
+                "mean": 0.30427503332239364,
+                "replicate_sd": 0.009476425258594183
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.021111770992113255,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 10,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1148,
+              "scalar_opposite_repaired": 1146,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0004166666666666667,
+            "repaired_fraction_among_scalar_opposites": 0.9982578397212544,
+            "scalar_opposite_fraction": 0.04783333333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -5.7730897795144126e-06,
+                  0.00014240649211526887
+                ],
+                "interval_level": 0.95,
+                "mean": 4.908067801987862e-05,
+                "replicate_sd": 0.00015644627370324328
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.00010411485321769123,
+                  0.0008216380811847371
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0002859934184640163,
+                "replicate_sd": 0.0009084592077908041
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.014316115937598304,
+                  -0.011665761637842052
+                ],
+                "interval_level": 0.95,
+                "mean": -0.012996694739641943,
+                "replicate_sd": 0.0024317942327138848
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.039457336094859505,
+                  -0.03303829561889616
+                ],
+                "interval_level": 0.95,
+                "mean": -0.036275278704493645,
+                "replicate_sd": 0.005887335255631724
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 0.8996254359316209,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9921776950894322,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17037943652054874,
+                "replicate_sd": 0.0022107538834918125
+              },
+              "log_loss": {
+                "mean": 0.5256842994117595,
+                "replicate_sd": 0.004751173904558156
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.10944040038529314,
+                "replicate_sd": 0.004866049810651883
+              },
+              "log_loss": {
+                "mean": 0.3479016880777479,
+                "replicate_sd": 0.015122094872774884
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.1391195197247146,
+                "replicate_sd": 0.004666905634950521
+              },
+              "log_loss": {
+                "mean": 0.571398311114522,
+                "replicate_sd": 0.02609580895253744
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.10948948106331302,
+                "replicate_sd": 0.004778605920802992
+              },
+              "log_loss": {
+                "mean": 0.34818768149621193,
+                "replicate_sd": 0.01459077735902045
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12248617580295496,
+                "replicate_sd": 0.003761616082638377
+              },
+              "log_loss": {
+                "mean": 0.38446296020070553,
+                "replicate_sd": 0.011530292848981548
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.03656127212295762,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 3,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1900,
+              "scalar_opposite_repaired": 1898,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.000125,
+            "repaired_fraction_among_scalar_opposites": 0.9989473684210526,
+            "scalar_opposite_fraction": 0.07916666666666666,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  1.2230662388001736e-05,
+                  8.162578844505738e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 4.5275862830420253e-05,
+                "replicate_sd": 6.494409296234475e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  2.8463524570824497e-05,
+                  0.00038996089352047204
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00019400848221123868,
+                "replicate_sd": 0.0003390660135754604
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.015450806930272657,
+                  -0.012323799116854536
+                ],
+                "interval_level": 0.95,
+                "mean": -0.013840912420124566,
+                "replicate_sd": 0.0029268636674338253
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.04405957565203779,
+                  -0.03550767287991795
+                ],
+                "interval_level": 0.95,
+                "mean": -0.039634494316853335,
+                "replicate_sd": 0.00789033469530108
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.995128903459163,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1711130916645298,
+                "replicate_sd": 0.0025135704134603173
+              },
+              "log_loss": {
+                "mean": 0.5268861789958001,
+                "replicate_sd": 0.005350110440566966
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.11282680731208498,
+                "replicate_sd": 0.004167054209862654
+              },
+              "log_loss": {
+                "mean": 0.35632574178007576,
+                "replicate_sd": 0.012495121523018326
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.14567057400459069,
+                "replicate_sd": 0.008297319257322494
+              },
+              "log_loss": {
+                "mean": 0.6100160527941382,
+                "replicate_sd": 0.039782560039263185
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.11287208317491539,
+                "replicate_sd": 0.004142771780297717
+              },
+              "log_loss": {
+                "mean": 0.356519750262287,
+                "replicate_sd": 0.012295770641185241
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12671299559503996,
+                "replicate_sd": 0.005642674707998416
+              },
+              "log_loss": {
+                "mean": 0.39615424457914034,
+                "replicate_sd": 0.015126204136979716
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.03982850279906458,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2108,
+              "scalar_opposite_repaired": 2108,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.08783333333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  1.3987312911241953e-06,
+                  9.579708190011891e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 3.843901861201477e-05,
+                "replicate_sd": 9.492604316139616e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -4.4465937643413544e-05,
+                  0.0008027948395017998
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00026078019218249426,
+                "replicate_sd": 0.0009047563953007575
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": -5.3290705182007514e-14,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16246581885071468,
+                "replicate_sd": 0.0010844195754385385
+              },
+              "log_loss": {
+                "mean": 0.5132408874084851,
+                "replicate_sd": 0.0022395350257795833
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.0419046789974547,
+                "replicate_sd": 0.002986702516594797
+              },
+              "log_loss": {
+                "mean": 0.14365662124737777,
+                "replicate_sd": 0.010454895384979115
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.0419046789974547,
+                "replicate_sd": 0.002986702516594797
+              },
+              "log_loss": {
+                "mean": 0.14365662124737777,
+                "replicate_sd": 0.010454895384979115
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.04194311801606671,
+                "replicate_sd": 0.002935401917505776
+              },
+              "log_loss": {
+                "mean": 0.14391740143956025,
+                "replicate_sd": 0.009976145508032282
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.04194311801606671,
+                "replicate_sd": 0.002935401917505776
+              },
+              "log_loss": {
+                "mean": 0.14391740143956025,
+                "replicate_sd": 0.009976145508032282
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0002607801921824804,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  3.643221878720944e-05,
+                  0.0001449927030381869
+                ],
+                "interval_level": 0.95,
+                "mean": 8.520862896248607e-05,
+                "replicate_sd": 0.00010158766149554816
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0001450926774711788,
+                  0.0006970296793175095
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00039656540297151416,
+                "replicate_sd": 0.0005150438625922218
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -5.201415689823121e-05,
+                  4.554470485911011e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -1.5944341438426518e-05,
+                "replicate_sd": 5.959283481069398e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0002278426047475727,
+                  4.460509532280369e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -5.681805734494375e-05,
+                "replicate_sd": 0.0002740985721334633
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.5027513673895044,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.12532009285309365,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1704951575664664,
+                "replicate_sd": 0.0018106609463253121
+              },
+              "log_loss": {
+                "mean": 0.5256053978999903,
+                "replicate_sd": 0.004003668570672941
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1256849961782315,
+                "replicate_sd": 0.0028623230927933784
+              },
+              "log_loss": {
+                "mean": 0.393625710280377,
+                "replicate_sd": 0.007531023827367488
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.144061774572918,
+                "replicate_sd": 0.003950351301123712
+              },
+              "log_loss": {
+                "mean": 0.6031443470041374,
+                "replicate_sd": 0.01862011794963536
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.125770204807194,
+                "replicate_sd": 0.002807995128150218
+              },
+              "log_loss": {
+                "mean": 0.39402227568334847,
+                "replicate_sd": 0.007281034473313448
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12578614914863243,
+                "replicate_sd": 0.0027994084927814274
+              },
+              "log_loss": {
+                "mean": 0.39407909374069344,
+                "replicate_sd": 0.00722344795990535
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0004533834603164255,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -1.2986623668897964e-05,
+                  0.000138861378168856
+                ],
+                "interval_level": 0.95,
+                "mean": 4.5249325522543626e-05,
+                "replicate_sd": 0.00015618909960203516
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -4.459240054017707e-05,
+                  0.000525590284251753
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00016864279377863667,
+                "replicate_sd": 0.0005957810450483732
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -4.1585789947375744e-05,
+                  2.2449874899567227e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -7.31520804001425e-06,
+                "replicate_sd": 5.640669538306188e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0001307111797947865,
+                  0.00010919905175784302
+                ],
+                "interval_level": 0.95,
+                "mean": -2.0156095850991835e-05,
+                "replicate_sd": 0.0002164619244529108
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.9010375941559965,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.10675961013616564,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17718928316737306,
+                "replicate_sd": 0.0019650541896931418
+              },
+              "log_loss": {
+                "mean": 0.5369925778923396,
+                "replicate_sd": 0.004115091225616384
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.15743527911969032,
+                "replicate_sd": 0.004087083450972756
+              },
+              "log_loss": {
+                "mean": 0.4789239999570479,
+                "replicate_sd": 0.010315097483135909
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.19440361506640888,
+                "replicate_sd": 0.006776790567404878
+              },
+              "log_loss": {
+                "mean": 0.9859982302256403,
+                "replicate_sd": 0.04883974695266253
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.15748052844521288,
+                "replicate_sd": 0.003995365262079967
+              },
+              "log_loss": {
+                "mean": 0.4790926427508266,
+                "replicate_sd": 0.009977881075983458
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.15748784365325288,
+                "replicate_sd": 0.004019783283015285
+              },
+              "log_loss": {
+                "mean": 0.4791127988466775,
+                "replicate_sd": 0.010097528109750245
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.00018879888962963776,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -4.974008464959015e-05,
+                  0.0001763979852046498
+                ],
+                "interval_level": 0.95,
+                "mean": 4.261042999414525e-05,
+                "replicate_sd": 0.00022138711232764003
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.00012299226519075593,
+                  0.0006146919230322762
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00018002936442977624,
+                "replicate_sd": 0.0007219052482260001
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0001449983606186405,
+                  -9.231962248537498e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -6.944969662041102e-05,
+                "replicate_sd": 0.00012677520021197417
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0006415756144125362,
+                  -7.714114557420363e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -0.00029415605587197746,
+                "replicate_sd": 0.0005981761144017908
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.6203397305736784,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17993959231427206,
+                "replicate_sd": 0.0035319864904775665
+              },
+              "log_loss": {
+                "mean": 0.5421633725722393,
+                "replicate_sd": 0.007531978384872279
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.16448454565807327,
+                "replicate_sd": 0.006209169753320104
+              },
+              "log_loss": {
+                "mean": 0.49642552480098856,
+                "replicate_sd": 0.015098470939202666
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.2066668813025124,
+                "replicate_sd": 0.010900181723145556
+              },
+              "log_loss": {
+                "mean": 1.0862808320588282,
+                "replicate_sd": 0.0642030664359771
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.16452715608806742,
+                "replicate_sd": 0.006032979250278139
+              },
+              "log_loss": {
+                "mean": 0.49660555416541835,
+                "replicate_sd": 0.014539262015442816
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.16459660578468782,
+                "replicate_sd": 0.006074883674183588
+              },
+              "log_loss": {
+                "mean": 0.49689971022129026,
+                "replicate_sd": 0.014766601435549892
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0004741854203016982,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -7.806985776362985e-06,
+                  1.2394439063822399e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -2.8365255254613844e-06,
+                "replicate_sd": 8.472114040501256e-06
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -4.728599142669413e-05,
+                  1.2669423380735437e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -1.262831183379091e-05,
+                "replicate_sd": 5.688422716640892e-05
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": null,
+          "gap_fraction_undefined": true,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1627837013384702,
+                "replicate_sd": 0.0007362622597533333
+              },
+              "log_loss": {
+                "mean": 0.5139151487961725,
+                "replicate_sd": 0.0015546073171771057
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.043111519569635236,
+                "replicate_sd": 0.0025744119434712395
+              },
+              "log_loss": {
+                "mean": 0.14464633016381026,
+                "replicate_sd": 0.008064533903620889
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.043111519569635236,
+                "replicate_sd": 0.0025744119434712395
+              },
+              "log_loss": {
+                "mean": 0.14464633016381026,
+                "replicate_sd": 0.008064533903620889
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.04310868304410977,
+                "replicate_sd": 0.002572142202434298
+              },
+              "log_loss": {
+                "mean": 0.14463370185197647,
+                "replicate_sd": 0.008048667048765666
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.04310868304410977,
+                "replicate_sd": 0.002572142202434298
+              },
+              "log_loss": {
+                "mean": 0.14463370185197647,
+                "replicate_sd": 0.008048667048765666
+              }
+            }
+          },
+          "scalar_oracle_gap": -1.2628311833795536e-05,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -2.946302753647164e-05,
+                  7.586083738793063e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 1.9229424257101908e-05,
+                "replicate_sd": 9.759320921923906e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.00012007632606452581,
+                  0.00015352388815029647
+                ],
+                "interval_level": 0.95,
+                "mean": 1.3052801358400442e-05,
+                "replicate_sd": 0.000251017373937571
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.018727922200593307,
+                  -0.016228888885795267
+                ],
+                "interval_level": 0.95,
+                "mean": -0.017513973638601674,
+                "replicate_sd": 0.0023241029857407123
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.049169308564947244,
+                  -0.04237064710205466
+                ],
+                "interval_level": 0.95,
+                "mean": -0.04579165855190346,
+                "replicate_sd": 0.006275139448274573
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.5035977617700952,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9997150336510642,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17778889226889708,
+                "replicate_sd": 0.0025808334471861187
+              },
+              "log_loss": {
+                "mean": 0.5383613237471322,
+                "replicate_sd": 0.005660084934615872
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.14158896253153616,
+                "replicate_sd": 0.003900281445145651
+              },
+              "log_loss": {
+                "mean": 0.4377465627405562,
+                "replicate_sd": 0.009768886143176328
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.19619055505033026,
+                "replicate_sd": 0.006584763104017607
+              },
+              "log_loss": {
+                "mean": 1.0080490069736794,
+                "replicate_sd": 0.0364684590371079
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.14160819195579327,
+                "replicate_sd": 0.003864452270108194
+              },
+              "log_loss": {
+                "mean": 0.43775961554191456,
+                "replicate_sd": 0.009657052757952141
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.15912216559439493,
+                "replicate_sd": 0.0038850933337171148
+              },
+              "log_loss": {
+                "mean": 0.4835512740938181,
+                "replicate_sd": 0.010154022612524918
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.04580471135326192,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 43,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2771,
+              "scalar_opposite_repaired": 2757,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0017916666666666667,
+            "repaired_fraction_among_scalar_opposites": 0.9949476723204619,
+            "scalar_opposite_fraction": 0.11545833333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  1.2901543079096519e-06,
+                  0.00012577190697204516
+                ],
+                "interval_level": 0.95,
+                "mean": 5.520948715124809e-05,
+                "replicate_sd": 0.00011238612411727487
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  6.544050886931007e-06,
+                  0.0006190641590483013
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00026454305147994667,
+                "replicate_sd": 0.0005668616343186721
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.028928956968651495,
+                  -0.02602349622625938
+                ],
+                "interval_level": 0.95,
+                "mean": -0.027467705071857824,
+                "replicate_sd": 0.0027081555641468354
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0719659569141742,
+                  -0.06436002374336701
+                ],
+                "interval_level": 0.95,
+                "mean": -0.06835584222113945,
+                "replicate_sd": 0.0071079954037320545
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.8989507246994398,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.996144832903095,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1891397196873981,
+                "replicate_sd": 0.0022411204204345527
+              },
+              "log_loss": {
+                "mean": 0.5597379153101584,
+                "replicate_sd": 0.004972485981342976
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.15860855275327082,
+                "replicate_sd": 0.004042644250095108
+              },
+              "log_loss": {
+                "mean": 0.4821262877902051,
+                "replicate_sd": 0.009842888675687327
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.24878620287298747,
+                "replicate_sd": 0.007151847709177857
+              },
+              "log_loss": {
+                "mean": 1.5647310829960597,
+                "replicate_sd": 0.046865787121057136
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.15866376224042208,
+                "replicate_sd": 0.00402038699954913
+              },
+              "log_loss": {
+                "mean": 0.4823908308416851,
+                "replicate_sd": 0.009690784797726996
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.18613146731227992,
+                "replicate_sd": 0.002644507350528318
+              },
+              "log_loss": {
+                "mean": 0.5507466730628245,
+                "replicate_sd": 0.0060884985707140545
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.06862038527261943,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 2,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4281,
+              "scalar_opposite_repaired": 4279,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 8.333333333333333e-05,
+            "repaired_fraction_among_scalar_opposites": 0.9995328194347115,
+            "scalar_opposite_fraction": 0.178375,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  3.6832856703502487e-05,
+                  0.0003098889055783848
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0001599344232059476,
+                "replicate_sd": 0.0002514259282794189
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00022244366321968998,
+                  0.0011106355945962227
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0006306384281906755,
+                "replicate_sd": 0.0008156905752461812
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.030076085067490543,
+                  -0.02622538785938595
+                ],
+                "interval_level": 0.95,
+                "mean": -0.028201714115702728,
+                "replicate_sd": 0.003562037424877972
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.07485714343059732,
+                  -0.066673748015367
+                ],
+                "interval_level": 0.95,
+                "mean": -0.07080491282406352,
+                "replicate_sd": 0.007576251603921161
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.9999999999999999,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9911719246630609,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.19053107220395568,
+                "replicate_sd": 0.0043502995003184995
+              },
+              "log_loss": {
+                "mean": 0.5621276206469045,
+                "replicate_sd": 0.01022662339129632
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.16056835963573193,
+                "replicate_sd": 0.006019170654877054
+              },
+              "log_loss": {
+                "mean": 0.48626166376106167,
+                "replicate_sd": 0.01497349429170228
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.2537822023500391,
+                "replicate_sd": 0.00998415280663334
+              },
+              "log_loss": {
+                "mean": 1.6978282445821293,
+                "replicate_sd": 0.0910878567525603
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1607282940589379,
+                "replicate_sd": 0.00588002424229719
+              },
+              "log_loss": {
+                "mean": 0.4868923021892524,
+                "replicate_sd": 0.014575023728018166
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.18893000817464065,
+                "replicate_sd": 0.0048463370388381905
+              },
+              "log_loss": {
+                "mean": 0.5576972150133158,
+                "replicate_sd": 0.012320351102444291
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.07143555125225415,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4202,
+              "scalar_opposite_repaired": 4202,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.17508333333333334,
+            "test_questions": 24000
+          }
+        }
+      },
+      "phase": "source-inference-sensitivity-m2000-v1",
+      "replicates": 12,
+      "resampling_unit": "independently_fitted_replicate",
+      "test_count": 2000,
+      "train_count": 2000
+    },
+    "source-inference-sensitivity-m400-v1": {
+      "bootstrap_resamples": 10000,
+      "conditions": {
+        "groups-4-3-2-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -2.9454516116069092e-05,
+                  6.826979414131288e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 9.994621107393964e-06,
+                "replicate_sd": 9.245143961758131e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  2.2024832417913233e-05,
+                  0.0007301414105924637
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00036282511235235143,
+                "replicate_sd": 0.0006611011129157325
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": -5.084821452783217e-14,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16228386202848175,
+                "replicate_sd": 0.0008002773484219906
+              },
+              "log_loss": {
+                "mean": 0.5128506076289424,
+                "replicate_sd": 0.001664800100664121
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.04274704695319908,
+                "replicate_sd": 0.0024096185553222583
+              },
+              "log_loss": {
+                "mean": 0.14546206779470303,
+                "replicate_sd": 0.008081649996309824
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.04274704695319908,
+                "replicate_sd": 0.002409618555322258
+              },
+              "log_loss": {
+                "mean": 0.14546206779470303,
+                "replicate_sd": 0.008081649996309824
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.042757041574306466,
+                "replicate_sd": 0.0023910568697734047
+              },
+              "log_loss": {
+                "mean": 0.14582489290705536,
+                "replicate_sd": 0.0077328309369486025
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.042757041574306466,
+                "replicate_sd": 0.0023910568697734047
+              },
+              "log_loss": {
+                "mean": 0.14582489290705536,
+                "replicate_sd": 0.0077328309369486025
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.00036282511235233295,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -7.042429169151801e-05,
+                  1.5534364515050604e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -2.4916440292759256e-05,
+                "replicate_sd": 8.022403351249581e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -4.787306450863687e-05,
+                  0.0004868329020321618
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00020196604206833743,
+                "replicate_sd": 0.0005095378274625087
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.007925063472548281,
+                  -0.00625147444673452
+                ],
+                "interval_level": 0.95,
+                "mean": -0.007152968004092864,
+                "replicate_sd": 0.0015601713421073882
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.024377920598230126,
+                  -0.019662392877973327
+                ],
+                "interval_level": 0.95,
+                "mean": -0.022036475853366308,
+                "replicate_sd": 0.004346673215850332
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 0.5015544734083699,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9909181568107162,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16651500558071208,
+                "replicate_sd": 0.0011367879124923367
+              },
+              "log_loss": {
+                "mean": 0.5192935848319965,
+                "replicate_sd": 0.0024213677981154277
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.08831728646378789,
+                "replicate_sd": 0.0028823314003608214
+              },
+              "log_loss": {
+                "mean": 0.2843478185401183,
+                "replicate_sd": 0.008292494661063335
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.10280495049120003,
+                "replicate_sd": 0.0037779732220662634
+              },
+              "log_loss": {
+                "mean": 0.3753133468523446,
+                "replicate_sd": 0.017479969905421597
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.08829237002349512,
+                "replicate_sd": 0.0028294916791742437
+              },
+              "log_loss": {
+                "mean": 0.28454978458218666,
+                "replicate_sd": 0.008114028210530273
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.09544533802758799,
+                "replicate_sd": 0.002910765888324492
+              },
+              "log_loss": {
+                "mean": 0.306586260435553,
+                "replicate_sd": 0.009706921012922812
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.02223844189543467,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 13,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1145,
+              "scalar_opposite_repaired": 1141,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0005416666666666666,
+            "repaired_fraction_among_scalar_opposites": 0.9965065502183406,
+            "scalar_opposite_fraction": 0.04770833333333333,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -3.432427866513417e-05,
+                  2.252669863165903e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -3.646865194064051e-06,
+                "replicate_sd": 5.1930361532420774e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0002470641257204519,
+                  1.6306707467339918e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -9.498631394260863e-05,
+                "replicate_sd": 0.000231381239591806
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.012892531345915597,
+                  -0.010312627297585282
+                ],
+                "interval_level": 0.95,
+                "mean": -0.011602567730513299,
+                "replicate_sd": 0.002368778346581624
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.037566535066511836,
+                  -0.029400079153914863
+                ],
+                "interval_level": 0.95,
+                "mean": -0.033463453828794884,
+                "replicate_sd": 0.0075515880348384365
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 0.8996593272208179,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 1.0028465890409959,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1689447801519469,
+                "replicate_sd": 0.002260286756968465
+              },
+              "log_loss": {
+                "mean": 0.522630000678322,
+                "replicate_sd": 0.004840938717470097
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.10819879278080924,
+                "replicate_sd": 0.0053230371037359
+              },
+              "log_loss": {
+                "mean": 0.3450359400865594,
+                "replicate_sd": 0.015232914374442142
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.13474375637187094,
+                "replicate_sd": 0.006350010590949589
+              },
+              "log_loss": {
+                "mean": 0.5567269235867268,
+                "replicate_sd": 0.03184332153814566
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.10819514591561517,
+                "replicate_sd": 0.0053048723592273115
+              },
+              "log_loss": {
+                "mean": 0.34494095377261685,
+                "replicate_sd": 0.015103366836315552
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.11979771364612847,
+                "replicate_sd": 0.0045616273663163275
+              },
+              "log_loss": {
+                "mean": 0.3784044076014117,
+                "replicate_sd": 0.014075363439020373
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.033368467514852285,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 8,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 1864,
+              "scalar_opposite_repaired": 1859,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0003333333333333333,
+            "repaired_fraction_among_scalar_opposites": 0.9973175965665236,
+            "scalar_opposite_fraction": 0.07766666666666666,
+            "test_questions": 24000
+          }
+        },
+        "groups-4-3-2-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  4.520772476130501e-05,
+                  0.0007606244165623922
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0003414593512673913,
+                "replicate_sd": 0.0006957181658077384
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  7.153031430030186e-05,
+                  0.0023312100975195977
+                ],
+                "interval_level": 0.95,
+                "mean": 0.001045156931684471,
+                "replicate_sd": 0.0021415880081608013
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.016314414239372556,
+                  -0.014053228344206954
+                ],
+                "interval_level": 0.95,
+                "mean": -0.015161922904603017,
+                "replicate_sd": 0.00208532370940826
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0446876654981557,
+                  -0.03812169995236995
+                ],
+                "interval_level": 0.95,
+                "mean": -0.04131017638367334,
+                "replicate_sd": 0.006071476490864036
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 4.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9753240772796491,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17120404821621982,
+                "replicate_sd": 0.0020667866821582827
+              },
+              "log_loss": {
+                "mean": 0.5270513359005164,
+                "replicate_sd": 0.00433592374412256
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.11249499401741657,
+                "replicate_sd": 0.00499862371184737
+              },
+              "log_loss": {
+                "mean": 0.35879075013794076,
+                "replicate_sd": 0.01425073352764536
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.1464665915344133,
+                "replicate_sd": 0.007721473170385832
+              },
+              "log_loss": {
+                "mean": 0.6278794872267129,
+                "replicate_sd": 0.0313893938339381
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.11283645336868396,
+                "replicate_sd": 0.004831638308616518
+              },
+              "log_loss": {
+                "mean": 0.35983590706962526,
+                "replicate_sd": 0.013886469331791067
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12799837627328697,
+                "replicate_sd": 0.004906238903559391
+              },
+              "log_loss": {
+                "mean": 0.40114608345329855,
+                "replicate_sd": 0.012102985989469817
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.04235533331535779,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2065,
+              "scalar_opposite_repaired": 2065,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.08604166666666667,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -2.2618898308501948e-05,
+                  6.060524981439259e-05
+                ],
+                "interval_level": 0.95,
+                "mean": 1.4220452243566642e-05,
+                "replicate_sd": 7.653315184173831e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.00010346336981231774,
+                  0.0003715421387317508
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00010275255490956268,
+                "replicate_sd": 0.00044804136684514344
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": 1.1246559239452836e-13,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16266003295001918,
+                "replicate_sd": 0.0011353798091529826
+              },
+              "log_loss": {
+                "mean": 0.5136326436200402,
+                "replicate_sd": 0.0023880975789587
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.04265942550265292,
+                "replicate_sd": 0.0030791669551042196
+              },
+              "log_loss": {
+                "mean": 0.14459948245224394,
+                "replicate_sd": 0.011579929463979559
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.04265942550265292,
+                "replicate_sd": 0.0030791669551042196
+              },
+              "log_loss": {
+                "mean": 0.14459948245224394,
+                "replicate_sd": 0.011579929463979559
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.042673645954896484,
+                "replicate_sd": 0.0030699771499373826
+              },
+              "log_loss": {
+                "mean": 0.1447022350071535,
+                "replicate_sd": 0.011561078203047836
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.042673645954896484,
+                "replicate_sd": 0.0030699771499373826
+              },
+              "log_loss": {
+                "mean": 0.1447022350071535,
+                "replicate_sd": 0.011561078203047836
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.00010275255490957425,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  5.99604233571633e-05,
+                  0.00042977349582867867
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0002187426845699491,
+                "replicate_sd": 0.0003463139464798483
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00026879272553554317,
+                  0.0021823901736607956
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0010905266261785618,
+                "replicate_sd": 0.0018051342352626897
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.00023807165319798124,
+                  3.8624912613536656e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -7.170690801931029e-05,
+                "replicate_sd": 0.00026878795945508335
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.001924151318769926,
+                  0.0002184965583322355
+                ],
+                "interval_level": 0.95,
+                "mean": -0.000579023611964824,
+                "replicate_sd": 0.0022033185603012526
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.49970003420934256,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.34681412918052834,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16995458672745292,
+                "replicate_sd": 0.0016740547248419813
+              },
+              "log_loss": {
+                "mean": 0.5244750823910788,
+                "replicate_sd": 0.003588192016509065
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1253154529739345,
+                "replicate_sd": 0.00382902122115051
+              },
+              "log_loss": {
+                "mean": 0.39338131211863586,
+                "replicate_sd": 0.010385265266773146
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.14344751957314947,
+                "replicate_sd": 0.0052023361494775155
+              },
+              "log_loss": {
+                "mean": 0.6090922377611568,
+                "replicate_sd": 0.02923880065232933
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.12553419565850446,
+                "replicate_sd": 0.003673093728624125
+              },
+              "log_loss": {
+                "mean": 0.39447183874481445,
+                "replicate_sd": 0.00961862389066615
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.12560590256652376,
+                "replicate_sd": 0.003769875957810831
+              },
+              "log_loss": {
+                "mean": 0.3950508623567793,
+                "replicate_sd": 0.010598005320734778
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0016695502381434135,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  5.5882790300655475e-05,
+                  0.0003476713633945277
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0001888121089147395,
+                "replicate_sd": 0.00027303189217710153
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00022242678810946312,
+                  0.0013640523103443632
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0007433457812241473,
+                "replicate_sd": 0.0010785044859517438
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -6.336244324934734e-05,
+                  2.4208278510360706e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -2.3398625556237302e-05,
+                "replicate_sd": 6.211830056529102e-05
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.00038900989430451044,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": -0.00014699437318717776,
+                "replicate_sd": 0.0003801536282414145
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.9006813544310659,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.16509911684743195,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17804726254939243,
+                "replicate_sd": 0.0015493618764573314
+              },
+              "log_loss": {
+                "mean": 0.5388775852604754,
+                "replicate_sd": 0.003386350997056637
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1586243666398182,
+                "replicate_sd": 0.003215320136166957
+              },
+              "log_loss": {
+                "mean": 0.4822791890012989,
+                "replicate_sd": 0.00856233303931631
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.19628901233714824,
+                "replicate_sd": 0.006424194881504061
+              },
+              "log_loss": {
+                "mean": 0.9971770993792172,
+                "replicate_sd": 0.043341414079552616
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1588131787487329,
+                "replicate_sd": 0.0031901136061475207
+              },
+              "log_loss": {
+                "mean": 0.483022534782523,
+                "replicate_sd": 0.008333883739512798
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.15883657737428916,
+                "replicate_sd": 0.0031986851322822487
+              },
+              "log_loss": {
+                "mean": 0.48316952915571015,
+                "replicate_sd": 0.008411017494746176
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.000890340154411251,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-5-5-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0002372725692661795
+                ],
+                "interval_level": 0.95,
+                "mean": 8.411637621263263e-05,
+                "replicate_sd": 0.00024247590122918953
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -1.9311830850484344e-06,
+                  0.001145137479352605
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00040892427153484123,
+                "replicate_sd": 0.0011441274145743063
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0006790655140134084,
+                  2.690034157487063e-05
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0002760659708248662,
+                "replicate_sd": 0.0006718513791193891
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.0036735001795469837,
+                  -9.174612829114141e-06
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0014575296729284575,
+                "replicate_sd": 0.0034894893237227215
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 1.0,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.7809084586587894,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.17784794688406294,
+                "replicate_sd": 0.0023284395146368347
+              },
+              "log_loss": {
+                "mean": 0.5377626995407394,
+                "replicate_sd": 0.004931544787745963
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.16102741289882302,
+                "replicate_sd": 0.004079618231503789
+              },
+              "log_loss": {
+                "mean": 0.48794442480265987,
+                "replicate_sd": 0.009251972792967366
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.20166111310190327,
+                "replicate_sd": 0.008343910711495076
+              },
+              "log_loss": {
+                "mean": 1.053139207592839,
+                "replicate_sd": 0.039955067899237785
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.16111152927503566,
+                "replicate_sd": 0.004027104318586381
+              },
+              "log_loss": {
+                "mean": 0.4883533490741947,
+                "replicate_sd": 0.008928277548547912
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.16138759524586052,
+                "replicate_sd": 0.004018399128190119
+              },
+              "log_loss": {
+                "mean": 0.48981087874712315,
+                "replicate_sd": 0.00892181872436004
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0018664539444632755,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  1.2996592840503372e-06,
+                  0.00013169827583773644
+                ],
+                "interval_level": 0.95,
+                "mean": 5.166025269206254e-05,
+                "replicate_sd": 0.00012527627655625266
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  5.0986068906179925e-05,
+                  0.0006808148572070479
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00029826520786195115,
+                "replicate_sd": 0.0005974248548831493
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.0,
+                  0.0
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0,
+                "replicate_sd": 0.0
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": null,
+            "mean_inferred_group_count": 10.0,
+            "mean_inferred_overlap": 0.0,
+            "mean_pair_error": null
+          },
+          "gap_fraction_closed": -3.108624468950438e-14,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": true,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.16239523690590943,
+                "replicate_sd": 0.0010927040743939082
+              },
+              "log_loss": {
+                "mean": 0.5130620282834835,
+                "replicate_sd": 0.0022900370260571963
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.042160778328870774,
+                "replicate_sd": 0.003279489383142414
+              },
+              "log_loss": {
+                "mean": 0.14344969663983131,
+                "replicate_sd": 0.010542965541255332
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.042160778328870774,
+                "replicate_sd": 0.003279489383142414
+              },
+              "log_loss": {
+                "mean": 0.14344969663983131,
+                "replicate_sd": 0.010542965541255332
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.04221243858156284,
+                "replicate_sd": 0.0033185181564207426
+              },
+              "log_loss": {
+                "mean": 0.14374796184769326,
+                "replicate_sd": 0.010697627357126451
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.04221243858156284,
+                "replicate_sd": 0.0033185181564207426
+              },
+              "log_loss": {
+                "mean": 0.14374796184769326,
+                "replicate_sd": 0.010697627357126451
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0002982652078619419,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 0,
+              "scalar_opposite_repaired": 0,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": null,
+            "scalar_opposite_fraction": 0.0,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.5": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  2.1846043736066252e-05,
+                  0.00020802792515463222
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00010650162717724028,
+                "replicate_sd": 0.00017500295476104646
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00013370904912752464,
+                  0.0007510875246107711
+                ],
+                "interval_level": 0.95,
+                "mean": 0.00041720661871472164,
+                "replicate_sd": 0.0005750549415730866
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.0185288136697801,
+                  -0.015628661144356626
+                ],
+                "interval_level": 0.95,
+                "mean": -0.01705207771241088,
+                "replicate_sd": 0.0026967296096918696
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.048896675433429904,
+                  -0.04222335479854846
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0455320177858527,
+                "replicate_sd": 0.006118274177266273
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.5121517245315316,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9909202685329058,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.1747365480204259,
+                "replicate_sd": 0.0020307339647961447
+              },
+              "log_loss": {
+                "mean": 0.5317538724696703,
+                "replicate_sd": 0.004460884950497085
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.1366679815230951,
+                "replicate_sd": 0.004703902889270721
+              },
+              "log_loss": {
+                "mean": 0.42364082150005816,
+                "replicate_sd": 0.011972497897161318
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.18844295266465227,
+                "replicate_sd": 0.00648341891969264
+              },
+              "log_loss": {
+                "mean": 0.9454486390372633,
+                "replicate_sd": 0.036385394645801344
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.13677448315027232,
+                "replicate_sd": 0.004594294438465184
+              },
+              "log_loss": {
+                "mean": 0.4240580281187729,
+                "replicate_sd": 0.011637204777562641
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.1538265608626832,
+                "replicate_sd": 0.0030207839324999704
+              },
+              "log_loss": {
+                "mean": 0.4695900459046256,
+                "replicate_sd": 0.007434647881233356
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.045949224404567446,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 93,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 2689,
+              "scalar_opposite_repaired": 2668,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.003875,
+            "repaired_fraction_among_scalar_opposites": 0.9921904053551506,
+            "scalar_opposite_fraction": 0.11204166666666666,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho0.9": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  3.549117008567866e-05,
+                  0.0002575772446796217
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0001401626485870768,
+                "replicate_sd": 0.00020847004507566625
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  0.00018614018796200398,
+                  0.0011807873839410298
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0006477855329051022,
+                "replicate_sd": 0.000944905979041177
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.03051695187693024,
+                  -0.02633980692157147
+                ],
+                "interval_level": 0.95,
+                "mean": -0.02847910779521264,
+                "replicate_sd": 0.0038578020778940432
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.07660453622909837,
+                  -0.06766378523204213
+                ],
+                "interval_level": 0.95,
+                "mean": -0.0721743970263705,
+                "replicate_sd": 0.008272706224392717
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.902526955131577,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9911045575655767,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.18823234240888276,
+                "replicate_sd": 0.0027886038889116047
+              },
+              "log_loss": {
+                "mean": 0.5577381248235623,
+                "replicate_sd": 0.006116823658148567
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.15665088688188225,
+                "replicate_sd": 0.0028123221724583747
+              },
+              "log_loss": {
+                "mean": 0.47649879571112463,
+                "replicate_sd": 0.006721268554869317
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.2459217620401358,
+                "replicate_sd": 0.010006858478172264
+              },
+              "log_loss": {
+                "mean": 1.559905976364844,
+                "replicate_sd": 0.08185455294584189
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.15679104953046932,
+                "replicate_sd": 0.002872221600009576
+              },
+              "log_loss": {
+                "mean": 0.4771465812440297,
+                "replicate_sd": 0.007143620056332901
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.18527015732568197,
+                "replicate_sd": 0.0037766420383154747
+              },
+              "log_loss": {
+                "mean": 0.5493209782704002,
+                "replicate_sd": 0.008977359296408095
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.07282218255927553,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 26,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4117,
+              "scalar_opposite_repaired": 4110,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0010833333333333333,
+            "repaired_fraction_among_scalar_opposites": 0.9982997328151567,
+            "scalar_opposite_fraction": 0.17154166666666668,
+            "test_questions": 24000
+          }
+        },
+        "groups-9-1-rho1": {
+          "contrasts": {
+            "inferred_groups_minus_grouped_oracle": {
+              "brier": {
+                "bootstrap_interval": [
+                  -2.5182432575275118e-06,
+                  0.0004319691292210609
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0001683207614026419,
+                "replicate_sd": 0.00042955439741842376
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  1.945673992885995e-05,
+                  0.0016098663943908452
+                ],
+                "interval_level": 0.95,
+                "mean": 0.0006814666935245536,
+                "replicate_sd": 0.001514664047976254
+              }
+            },
+            "inferred_groups_minus_scalar": {
+              "brier": {
+                "bootstrap_interval": [
+                  -0.030318225209518337,
+                  -0.026981423215716435
+                ],
+                "interval_level": 0.95,
+                "mean": -0.028592007328034495,
+                "replicate_sd": 0.0030824343554259385
+              },
+              "log_loss": {
+                "bootstrap_interval": [
+                  -0.07574493317353106,
+                  -0.06753351647012018
+                ],
+                "interval_level": 0.95,
+                "mean": -0.07144231849729572,
+                "replicate_sd": 0.007542268209940309
+              }
+            }
+          },
+          "diagnostics": {
+            "exact_recovery_fraction": 1.0,
+            "mean_inferred_group_count": 2.0,
+            "mean_inferred_overlap": 0.9999999999999999,
+            "mean_pair_error": 0.0
+          },
+          "gap_fraction_closed": 0.9905514291613845,
+          "gap_fraction_undefined": false,
+          "gap_fraction_unstable": false,
+          "methods": {
+            "arithmetic_mean": {
+              "brier": {
+                "mean": 0.19151556463698302,
+                "replicate_sd": 0.0026078647679079587
+              },
+              "log_loss": {
+                "mean": 0.5644876147510295,
+                "replicate_sd": 0.0060998206225765005
+              }
+            },
+            "grouped_oracle": {
+              "brier": {
+                "mean": 0.16156985995048356,
+                "replicate_sd": 0.003941372874014431
+              },
+              "log_loss": {
+                "mean": 0.48962983176292063,
+                "replicate_sd": 0.010456642056595286
+              }
+            },
+            "independent": {
+              "brier": {
+                "mean": 0.25662354604087806,
+                "replicate_sd": 0.004959882296806186
+              },
+              "log_loss": {
+                "mean": 1.7167851727398051,
+                "replicate_sd": 0.06763333333860402
+              }
+            },
+            "inferred_groups": {
+              "brier": {
+                "mean": 0.1617381807118862,
+                "replicate_sd": 0.0037598083879291522
+              },
+              "log_loss": {
+                "mean": 0.4903112984564452,
+                "replicate_sd": 0.009736961882716999
+              }
+            },
+            "prior": {
+              "brier": {
+                "mean": 0.25,
+                "replicate_sd": 0.0
+              },
+              "log_loss": {
+                "mean": 0.6931471805599453,
+                "replicate_sd": 0.0
+              }
+            },
+            "scalar": {
+              "brier": {
+                "mean": 0.19033018803992072,
+                "replicate_sd": 0.002978794272320965
+              },
+              "log_loss": {
+                "mean": 0.5617536169537409,
+                "replicate_sd": 0.00754932054337389
+              }
+            }
+          },
+          "scalar_oracle_gap": 0.0721237851908203,
+          "signs": {
+            "counts": {
+              "inferred_opposite": 0,
+              "inferred_zero": 0,
+              "oracle_zero": 0,
+              "scalar_opposite": 4270,
+              "scalar_opposite_repaired": 4270,
+              "scalar_zero": 0
+            },
+            "inferred_opposite_fraction": 0.0,
+            "repaired_fraction_among_scalar_opposites": 1.0,
+            "scalar_opposite_fraction": 0.17791666666666667,
+            "test_questions": 24000
+          }
+        }
+      },
+      "phase": "source-inference-sensitivity-m400-v1",
+      "replicates": 12,
+      "resampling_unit": "independently_fitted_replicate",
+      "test_count": 2000,
+      "train_count": 400
+    }
+  },
+  "schema_version": 1,
+  "status": "independently_verified_locked_synthetic_evaluation",
+  "verification_receipts": {
+    "source-inference-primary-v1": {
+      "fits_checked": 30,
+      "ledger_sha256": "e8370499a5fbbdd2ded61939a1eccb94a4f608172a124deed1ce8857f6767918",
+      "predictions_checked": 900000,
+      "questions_checked": 162000,
+      "status": "verified",
+      "summary_sha256": "39538b4c97bc07d2aff3011569df8cf88041d0578e898254f146a31c73cb24c3"
+    },
+    "source-inference-sensitivity-m100-v1": {
+      "fits_checked": 144,
+      "ledger_sha256": "90c0c52a8f801e9723e5a7746db6b96b777259029d87c057e5544e31b2ba5ac6",
+      "predictions_checked": 1728000,
+      "questions_checked": 302400,
+      "status": "verified",
+      "summary_sha256": "d70bf5629cbbbb7a8899d152d9ef742fa71c10167b679724b46609989f65ef2e"
+    },
+    "source-inference-sensitivity-m2000-v1": {
+      "fits_checked": 144,
+      "ledger_sha256": "ccc3c3bf46a4206b92157f87e076ea730cfd25554f2be0eb06c6c87acccf4186",
+      "predictions_checked": 1728000,
+      "questions_checked": 576000,
+      "status": "verified",
+      "summary_sha256": "3c298679472b5c09f596223ececbaab95648ebdf918144a49d95c7305cbb1f13"
+    },
+    "source-inference-sensitivity-m400-v1": {
+      "fits_checked": 144,
+      "ledger_sha256": "0f32c745d0fb3dffc16f832dd3fc5b0a2abdc2bdc93fc923ba712a4cf4a1e282",
+      "predictions_checked": 1728000,
+      "questions_checked": 345600,
+      "status": "verified",
+      "summary_sha256": "64f2decae3f7611a583ab5854f9c65e8ae2bae794ccc88b95cb0434103aed26c"
+    }
+  }
+}

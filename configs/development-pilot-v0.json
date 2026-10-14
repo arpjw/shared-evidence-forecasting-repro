@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "phase": "development-pilot-v0",
+  "seed": 20261014,
+  "train_count": 200,
+  "test_count": 2000,
+  "replicates": 3,
+  "conditions": [
+    {
+      "name": "independent-10",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.0
+    },
+    {
+      "name": "shared-half-10",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    },
+    {
+      "name": "duplicates-10",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 1.0
+    },
+    {
+      "name": "nine-one-sources",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 1.0,
+      "group_ids": ["source-a", "source-a", "source-a", "source-a", "source-a", "source-a", "source-a", "source-a", "source-a", "source-b"]
+    }
+  ]
+}

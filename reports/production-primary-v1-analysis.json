@@ -1,0 +1,227 @@
+{
+  "analysis": {
+    "analysis_seed": 100931022626831146778288521785567368280967884067454185406339508381044661579902,
+    "bootstrap_method": "percentile",
+    "bootstrap_resamples": 10000,
+    "conditions": {
+      "primary-n10-rho05-a05": {
+        "contrasts": {
+          "learned_minus_arithmetic_mean": {
+            "brier": {
+              "bootstrap_interval": [
+                -0.011742684594713367,
+                -0.010884744531473346
+              ],
+              "confidence_level": 0.95,
+              "mean": -0.011328589338622026,
+              "replicates": 30,
+              "sample_sd": 0.001222378746797391,
+              "standard_error": 0.00022317480447860895
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                -0.03451742884698552,
+                -0.03084863618587206
+              ],
+              "confidence_level": 0.975,
+              "mean": -0.032867674759805225,
+              "replicates": 30,
+              "sample_sd": 0.004587418938609299,
+              "standard_error": 0.0008375442778009066
+            }
+          },
+          "learned_minus_independent": {
+            "brier": {
+              "bootstrap_interval": [
+                -0.045589797893877,
+                -0.04414277359196793
+              ],
+              "confidence_level": 0.95,
+              "mean": -0.04486527004914517,
+              "replicates": 30,
+              "sample_sd": 0.002071088289504413,
+              "standard_error": 0.00037812725824878566
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                -0.6769442219106362,
+                -0.6603093849746896
+              ],
+              "confidence_level": 0.975,
+              "mean": -0.6685956434440967,
+              "replicates": 30,
+              "sample_sd": 0.021063395984086214,
+              "standard_error": 0.0038456323727159153
+            }
+          }
+        },
+        "methods": {
+          "arithmetic_mean": {
+            "brier": {
+              "bootstrap_interval": [
+                0.180181621656072,
+                0.1809622312001349
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.18057094086871348,
+              "replicates": 30,
+              "sample_sd": 0.0011145349550112163,
+              "standard_error": 0.00020348531199588287
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                0.5423124947268536,
+                0.543966967568978
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.5431576953340395,
+              "replicates": 30,
+              "sample_sd": 0.002415264809027244,
+              "standard_error": 0.00044096500608420956
+            }
+          },
+          "independent": {
+            "brier": {
+              "bootstrap_interval": [
+                0.21278076541091986,
+                0.21541134153917224
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.21410762157923663,
+              "replicates": 30,
+              "sample_sd": 0.003664722683082085,
+              "standard_error": 0.0006690837601749713
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                1.1699778231862563,
+                1.188024491772579
+              ],
+              "confidence_level": 0.95,
+              "mean": 1.178885664018331,
+              "replicates": 30,
+              "sample_sd": 0.0256867896859837,
+              "standard_error": 0.004689744713634771
+            }
+          },
+          "individual": {
+            "brier": {
+              "bootstrap_interval": [
+                0.1985710308238056,
+                0.19981521047464984
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.1991769980107914,
+              "replicates": 30,
+              "sample_sd": 0.0017444310782865615,
+              "standard_error": 0.0003184880838635367
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                0.5808333150444378,
+                0.5836493858546652
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.5822494857648821,
+              "replicates": 30,
+              "sample_sd": 0.004046176432791924,
+              "standard_error": 0.0007387273679619742
+            }
+          },
+          "learned": {
+            "brier": {
+              "bootstrap_interval": [
+                0.16850472981113826,
+                0.17000499737635785
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.16924235153009146,
+              "replicates": 30,
+              "sample_sd": 0.002134429741350364,
+              "standard_error": 0.00038969177224917054
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                0.5081472115416239,
+                0.5125562734324762
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.5102900205742342,
+              "replicates": 30,
+              "sample_sd": 0.006271674051657668,
+              "standard_error": 0.0011450457838042417
+            }
+          },
+          "oracle": {
+            "brier": {
+              "bootstrap_interval": [
+                0.16791572548132586,
+                0.16920592289331227
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.1685677319252792,
+              "replicates": 30,
+              "sample_sd": 0.001839199546302009,
+              "standard_error": 0.0003357903597542925
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                0.5057878589747863,
+                0.5090179482683956
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.5073890301642033,
+              "replicates": 30,
+              "sample_sd": 0.004577201878212537,
+              "standard_error": 0.0008356789063173402
+            }
+          },
+          "prior": {
+            "brier": {
+              "bootstrap_interval": [
+                0.25,
+                0.25
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.25,
+              "replicates": 30,
+              "sample_sd": 0.0,
+              "standard_error": 0.0
+            },
+            "log_loss": {
+              "bootstrap_interval": [
+                0.6931471805599453,
+                0.6931471805599453
+              ],
+              "confidence_level": 0.95,
+              "mean": 0.6931471805599453,
+              "replicates": 30,
+              "sample_sd": 0.0,
+              "standard_error": 0.0
+            }
+          }
+        }
+      }
+    },
+    "confidence_level": 0.975,
+    "multiplicity_note": "Intervals do not jointly cover all returned conditions and metrics.",
+    "resampling_unit": "independent_training_and_test_replicate",
+    "schema_version": 1,
+    "source_experiment": {
+      "phase": "production-primary-v1",
+      "replicates": 30,
+      "status": "locked_synthetic_evaluation",
+      "test_count": 10000,
+      "train_count": 200
+    }
+  },
+  "analysis_source_sha256": "a8b78a46ef82c942840116136b56ce5dd7e9ed6368513fa033ff0a44439ae08a",
+  "input_sha256": "f2dec062747dce7ff114b1ed103536ec54ef4293c4bb7363e48c3f419345e4a2",
+  "manifest_sha256": "afd6f762fd2bcde9798fde9358b56027257e91ce46fabc905661a53523fce552",
+  "python_version": "3.14.7",
+  "verification": {
+    "predictions_checked": 1800000,
+    "questions_checked": 306000,
+    "runs_verified": 30
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "analysis": {
+    "analysis_seed": 100931022626831146778288521785567368280967884067454185406339508381044661579902,
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.975,
+    "primary_contrasts": [
+      [
+        "learned",
+        "independent"
+      ],
+      [
+        "learned",
+        "arithmetic_mean"
+      ]
+    ],
+    "primary_metric": "log_loss",
+    "resampling_unit": "independent_training_and_test_replicate"
+  },
+  "config_path": "configs/production-primary-v1.json",
+  "config_sha256": "672c491672dfd0fbc68163854f1e50efc1ab8d16878e9bc8b9d1c2be66ea96a8",
+  "development_outcomes_inspected": true,
+  "protocol_path": "docs/research_protocol.md",
+  "protocol_sha256": "0d9a844b9b3f188fea1aba77997bdf0f1bde045008b2ba6e7876d102753176d3",
+  "python_version": "3.14.7",
+  "schema_version": 1,
+  "scope": "synthetic_primary_condition",
+  "source_sha256": {
+    "shared_evidence/analysis.py": "a8b78a46ef82c942840116136b56ce5dd7e9ed6368513fa033ff0a44439ae08a",
+    "shared_evidence/archive.py": "2f7138bec37be77258917267ad905ea70297460c04b01f4248716730dd869df6",
+    "shared_evidence/evaluate.py": "d9ac3c35763eb6a0aebf17fd0ab249287a57b73888cc6b1f2d7b0b36e135f7fb",
+    "shared_evidence/experiment.py": "c65d1f2d06d902eb16f442d5f4ee23db959006981462e6775baf3dcbbbe9df68",
+    "shared_evidence/freeze.py": "d8828b11f3464c5708243cbc3d206289ffde0c17e73f1afbf1df81f19bc3a710",
+    "shared_evidence/groups.py": "99d2765941f113fd47cc15861d4fc975bcb80768f589b677df1a6ab13a7cc5a6",
+    "shared_evidence/ledger.py": "5e066bc506c2c5f9a1f4f0ee13a639d305440822979c97246c4fd30238d3da19",
+    "shared_evidence/model.py": "7cdb2a2702c46599ba90f659667787894dd2d53d17cf170371ec3ab594720674",
+    "shared_evidence/simulate.py": "eb395735b9468d8901de5d02f04db48d5377df69dfd65ba5a1fce06a060f60bf",
+    "shared_evidence/verify.py": "04ab2c4236bdb22f27148ffb78a01f04233ff57f393a5bd4ff9dd70961fb3b61"
+  },
+  "status": "frozen_before_execution"
+}

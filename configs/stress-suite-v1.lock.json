@@ -1,0 +1,42 @@
+{
+  "analysis": {
+    "bootstrap_method": "percentile",
+    "bootstrap_resamples": 10000,
+    "confidence_level": 0.95,
+    "resampling_unit": "independent_training_and_test_replicate",
+    "scope": "descriptive_per_cell"
+  },
+  "config_sha256": {
+    "configs/stress-exchangeable-m1000-v1.json": "d550fc1d7de1ce96d9fd7f79c5f1fbebf2051f8dd5fed69cc26df3040c4850ea",
+    "configs/stress-exchangeable-m200-v1.json": "e129bac73e168927afd6f446a765ea3cc572ab260d28d74fec9adf5c4bafa18e",
+    "configs/stress-exchangeable-m50-v1.json": "e2666ff875a37346b3bb9cf869f1bfc6bb6679c593493b340844e501e0f298ae",
+    "configs/stress-groups-m1000-v1.json": "64419cb9db87931de287f1a9e9946d0da4f75a965c21b6c4d4950778d8599aa8",
+    "configs/stress-groups-m200-v1.json": "98309ad42737e5cfbce19500bd3de567c348d6bcb03875ca668d175f72eb96f6",
+    "configs/stress-groups-m50-v1.json": "ff24b68bfafd188e342fc96735bf215ceb9ffb4d29294b82b4b68db17d62c663",
+    "configs/stress-groups-m5000-v1.json": "503541d99d098122fa6957a81106a76a5430a7a890150e3b78126f6710863643"
+  },
+  "freeze_stage": "before_stress_execution",
+  "interpretation": "Primary outcome was already inspected. This lock preserves subsequent exploratory design and code; it is not a new confirmatory registration.",
+  "protocol_sha256": {
+    "docs/stress_protocol.md": "658dd15511a03902de6c3057b0f60d509719e83f9dbae9596fc6f287129c5cc3"
+  },
+  "python_version": "3.14.7",
+  "schema_version": 1,
+  "source_sha256": {
+    "scripts/group_signs.py": "a5ec5990b6572d8188d158c58c595b214e471e3ddd8ac72e2f5680e7f4fd66d7",
+    "scripts/stress_lock.py": "0cca799a933751e904319067fa210135e9cac96d2ebaf15b128ae8eedfab15cb",
+    "scripts/stress_report.py": "581d131e4d4a878f5837cd71312a267fd0752b5349bf5c7fe1116d020d353468",
+    "shared_evidence/__init__.py": "97cb2cfc5f91e0bc019bb1b35584501f08d91a121aee4263ac96b97c23e1aec1",
+    "shared_evidence/analysis.py": "a8b78a46ef82c942840116136b56ce5dd7e9ed6368513fa033ff0a44439ae08a",
+    "shared_evidence/archive.py": "2f7138bec37be77258917267ad905ea70297460c04b01f4248716730dd869df6",
+    "shared_evidence/evaluate.py": "d9ac3c35763eb6a0aebf17fd0ab249287a57b73888cc6b1f2d7b0b36e135f7fb",
+    "shared_evidence/experiment.py": "c65d1f2d06d902eb16f442d5f4ee23db959006981462e6775baf3dcbbbe9df68",
+    "shared_evidence/freeze.py": "d8828b11f3464c5708243cbc3d206289ffde0c17e73f1afbf1df81f19bc3a710",
+    "shared_evidence/groups.py": "99d2765941f113fd47cc15861d4fc975bcb80768f589b677df1a6ab13a7cc5a6",
+    "shared_evidence/ledger.py": "5e066bc506c2c5f9a1f4f0ee13a639d305440822979c97246c4fd30238d3da19",
+    "shared_evidence/model.py": "7cdb2a2702c46599ba90f659667787894dd2d53d17cf170371ec3ab594720674",
+    "shared_evidence/simulate.py": "eb395735b9468d8901de5d02f04db48d5377df69dfd65ba5a1fce06a060f60bf",
+    "shared_evidence/verify.py": "04ab2c4236bdb22f27148ffb78a01f04233ff57f393a5bd4ff9dd70961fb3b61"
+  },
+  "status": "exploratory_after_primary"
+}

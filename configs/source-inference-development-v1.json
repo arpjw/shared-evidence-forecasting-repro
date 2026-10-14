@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "phase": "source-inference-development-v1",
+  "seed": 95174200,
+  "train_count": 100,
+  "test_count": 100,
+  "replicates": 2,
+  "bootstrap_seed": 95174999,
+  "bootstrap_resamples": 10000,
+  "interval_level": 0.975,
+  "conditions": [
+    {
+      "name": "groups-9-1-rho0.9",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.9,
+      "group_ids": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ]
+    }
+  ],
+  "threshold_error_parameter": 0.05
+}

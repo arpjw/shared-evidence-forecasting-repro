@@ -1,0 +1,16 @@
+{
+  "schema_version": 1,
+  "phase": "production-primary-v1",
+  "seed": 73190842,
+  "train_count": 200,
+  "test_count": 10000,
+  "replicates": 30,
+  "conditions": [
+    {
+      "name": "primary-n10-rho05-a05",
+      "n_forecasters": 10,
+      "signal_strength": 0.5,
+      "overlap": 0.5
+    }
+  ]
+}

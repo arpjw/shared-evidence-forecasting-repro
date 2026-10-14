@@ -1,0 +1,1422 @@
+{
+  "config": {
+    "conditions": [
+      {
+        "n_forecasters": 10,
+        "name": "primary-n10-rho05-a05",
+        "overlap": 0.5,
+        "signal_strength": 0.5
+      }
+    ],
+    "phase": "production-primary-v1",
+    "replicates": 30,
+    "schema_version": 1,
+    "seed": 73190842,
+    "test_count": 10000,
+    "train_count": 200
+  },
+  "config_sha256": "672c491672dfd0fbc68163854f1e50efc1ab8d16878e9bc8b9d1c2be66ea96a8",
+  "ledger_path": "results/production-primary-v1.jsonl.gz",
+  "ledger_receipt": {
+    "bytes": 98348925,
+    "count": 306000,
+    "payload_sha256": "75d1cd1254d4b254b80470c78e091f59ba50f43e05486520d8f3a940b61c4a15",
+    "schema_version": 1,
+    "sha256": "b10e6512a35ab960e6cb96f02db61b174888508b04f48848f531cd06e548f323"
+  },
+  "manifest_sha256": "afd6f762fd2bcde9798fde9358b56027257e91ce46fabc905661a53523fce552",
+  "python_version": "3.14.7",
+  "runs": [
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04409315739722994,
+          "log_loss": 0.6623856712818108
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012547784831753755,
+          "log_loss": -0.03711354709804249
+        },
+        "learned_minus_independent": {
+          "brier": -0.04398883772261378,
+          "log_loss": -0.6620569034579472
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.17368558334850076,
+      "discount_boundary": false,
+      "replicate": 0,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17900579654710672,
+          "log_loss": 0.5397350520633544
+        },
+        "independent": {
+          "brier": 0.21044684943796674,
+          "log_loss": 1.164678408423259
+        },
+        "individual": {
+          "brier": 0.19847448821280766,
+          "log_loss": 0.5808560716471599
+        },
+        "learned": {
+          "brier": 0.16645801171535296,
+          "log_loss": 0.5026215049653119
+        },
+        "oracle": {
+          "brier": 0.1663536920407368,
+          "log_loss": 0.5022927371414483
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04598447402060549,
+          "log_loss": 0.6899527231086932
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.00833757492620174,
+          "log_loss": -0.017249768038830493
+        },
+        "learned_minus_independent": {
+          "brier": -0.042941060667021025,
+          "log_loss": -0.6739994234744963
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.2516509587675638,
+      "discount_boundary": false,
+      "replicate": 1,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18112608467987756,
+          "log_loss": 0.544380810923276
+        },
+        "independent": {
+          "brier": 0.21572957042069685,
+          "log_loss": 1.2011304663589417
+        },
+        "individual": {
+          "brier": 0.19790978593600997,
+          "log_loss": 0.5793358625399532
+        },
+        "learned": {
+          "brier": 0.17278850975367582,
+          "log_loss": 0.5271310428844455
+        },
+        "oracle": {
+          "brier": 0.16974509640009136,
+          "log_loss": 0.5111777432502486
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.047443911716087916,
+          "log_loss": 0.6492161902622436
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011786490515500653,
+          "log_loss": -0.03640986186355022
+        },
+        "learned_minus_independent": {
+          "brier": -0.047162826497887056,
+          "log_loss": -0.6475091394687876
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16313241453763883,
+      "discount_boundary": false,
+      "replicate": 2,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18003735292281772,
+          "log_loss": 0.5415711499624979
+        },
+        "independent": {
+          "brier": 0.21541368890520413,
+          "log_loss": 1.1526704275677353
+        },
+        "individual": {
+          "brier": 0.19694735545902636,
+          "log_loss": 0.576589003243066
+        },
+        "learned": {
+          "brier": 0.16825086240731707,
+          "log_loss": 0.5051612880989477
+        },
+        "oracle": {
+          "brier": 0.1679697771891162,
+          "log_loss": 0.5034542373054917
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04802141858151021,
+          "log_loss": 0.6896247536592681
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.010020055342701922,
+          "log_loss": -0.02891771461360948
+        },
+        "learned_minus_independent": {
+          "brier": -0.047062959321742315,
+          "log_loss": -0.6856188947953353
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.21312213601988955,
+      "discount_boundary": false,
+      "replicate": 3,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18236057966986308,
+          "log_loss": 0.5469301243355332
+        },
+        "independent": {
+          "brier": 0.21940348364890347,
+          "log_loss": 1.203631304517259
+        },
+        "individual": {
+          "brier": 0.2023306281312195,
+          "log_loss": 0.5898772211965869
+        },
+        "learned": {
+          "brier": 0.17234052432716115,
+          "log_loss": 0.5180124097219238
+        },
+        "oracle": {
+          "brier": 0.17138206506739326,
+          "log_loss": 0.514006550857991
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04892577234132614,
+          "log_loss": 0.7136730979427809
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.010553981568000859,
+          "log_loss": -0.03173791984359353
+        },
+        "learned_minus_independent": {
+          "brier": -0.04892819813138585,
+          "log_loss": -0.713516835903982
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16600416542396124,
+      "discount_boundary": false,
+      "replicate": 4,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18191229317786314,
+          "log_loss": 0.5460256807186421
+        },
+        "independent": {
+          "brier": 0.22028650974124814,
+          "log_loss": 1.2278045967790305
+        },
+        "individual": {
+          "brier": 0.20023781446888006,
+          "log_loss": 0.5843705241317635
+        },
+        "learned": {
+          "brier": 0.17135831160986228,
+          "log_loss": 0.5142877608750486
+        },
+        "oracle": {
+          "brier": 0.171360737399922,
+          "log_loss": 0.5141314988362496
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.046093823253777255,
+          "log_loss": 0.6541977999436327
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.01238457395738951,
+          "log_loss": -0.03758461600394103
+        },
+        "learned_minus_independent": {
+          "brier": -0.04608986576389634,
+          "log_loss": -0.6541704280433452
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.18067601281334605,
+      "discount_boundary": false,
+      "replicate": 5,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1798930515052306,
+          "log_loss": 0.5415679526601779
+        },
+        "independent": {
+          "brier": 0.21359834331173744,
+          "log_loss": 1.158153764699582
+        },
+        "individual": {
+          "brier": 0.19771129707370635,
+          "log_loss": 0.5784838770836083
+        },
+        "learned": {
+          "brier": 0.1675084775478411,
+          "log_loss": 0.5039833366562368
+        },
+        "oracle": {
+          "brier": 0.16750452005796018,
+          "log_loss": 0.5039559647559494
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04836794583895557,
+          "log_loss": 0.6739246370817381
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.009924045379476165,
+          "log_loss": -0.029076316487948728
+        },
+        "learned_minus_independent": {
+          "brier": -0.046899701915929626,
+          "log_loss": -0.6682710355631105
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.223608798306566,
+      "discount_boundary": false,
+      "replicate": 6,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18229952355898504,
+          "log_loss": 0.5468082302223906
+        },
+        "independent": {
+          "brier": 0.2192751800954385,
+          "log_loss": 1.1860029492975523
+        },
+        "individual": {
+          "brier": 0.20008390047859248,
+          "log_loss": 0.5837826932062651
+        },
+        "learned": {
+          "brier": 0.17237547817950888,
+          "log_loss": 0.5177319137344418
+        },
+        "oracle": {
+          "brier": 0.17090723425648294,
+          "log_loss": 0.5120783122158142
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.041078423239512274,
+          "log_loss": 0.6615753026271384
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012768487396446926,
+          "log_loss": -0.036017385273153235
+        },
+        "learned_minus_independent": {
+          "brier": -0.04061209748315314,
+          "log_loss": -0.6603945918214877
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16551778271136014,
+      "discount_boundary": false,
+      "replicate": 7,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1801705062660023,
+          "log_loss": 0.5428689429781329
+        },
+        "independent": {
+          "brier": 0.20801411635270853,
+          "log_loss": 1.1672461495264674
+        },
+        "individual": {
+          "brier": 0.1979719354812527,
+          "log_loss": 0.5798352994168156
+        },
+        "learned": {
+          "brier": 0.16740201886955539,
+          "log_loss": 0.5068515577049797
+        },
+        "oracle": {
+          "brier": 0.16693569311319625,
+          "log_loss": 0.5056708468993291
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04324158591629895,
+          "log_loss": 0.6697501242726243
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012116870189411433,
+          "log_loss": -0.034275400096207
+        },
+        "learned_minus_independent": {
+          "brier": -0.04300766072960785,
+          "log_loss": -0.6683192816314408
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.20316775200969794,
+      "discount_boundary": false,
+      "replicate": 8,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18138584713254402,
+          "log_loss": 0.5453183798211121
+        },
+        "independent": {
+          "brier": 0.21227663767274044,
+          "log_loss": 1.179362261356346
+        },
+        "individual": {
+          "brier": 0.20010166328697387,
+          "log_loss": 0.5847867706871972
+        },
+        "learned": {
+          "brier": 0.1692689769431326,
+          "log_loss": 0.5110429797249051
+        },
+        "oracle": {
+          "brier": 0.16903505175644148,
+          "log_loss": 0.5096121370837217
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04229045303411599,
+          "log_loss": 0.6619073358329876
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012001201503508668,
+          "log_loss": -0.03328484619896266
+        },
+        "learned_minus_independent": {
+          "brier": -0.0416771722077586,
+          "log_loss": -0.6584767888575436
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.2168846256236185,
+      "discount_boundary": false,
+      "replicate": 9,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1803413810157517,
+          "log_loss": 0.542922500738174
+        },
+        "independent": {
+          "brier": 0.21001735172000163,
+          "log_loss": 1.168114443396755
+        },
+        "individual": {
+          "brier": 0.19976820286963975,
+          "log_loss": 0.5844320402136836
+        },
+        "learned": {
+          "brier": 0.16834017951224303,
+          "log_loss": 0.5096376545392114
+        },
+        "oracle": {
+          "brier": 0.16772689868588564,
+          "log_loss": 0.5062071075637674
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04512969403372391,
+          "log_loss": 0.6439312151891595
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012316839762110787,
+          "log_loss": -0.036735350049489024
+        },
+        "learned_minus_independent": {
+          "brier": -0.044828730744585155,
+          "log_loss": -0.6426880811106145
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16630939486865576,
+      "discount_boundary": false,
+      "replicate": 10,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18015825490413404,
+          "log_loss": 0.5422228821866366
+        },
+        "independent": {
+          "brier": 0.2126701458866084,
+          "log_loss": 1.148175613247762
+        },
+        "individual": {
+          "brier": 0.1984893932207103,
+          "log_loss": 0.5812013565810306
+        },
+        "learned": {
+          "brier": 0.16784141514202325,
+          "log_loss": 0.5054875321371476
+        },
+        "oracle": {
+          "brier": 0.1675404518528845,
+          "log_loss": 0.5042443980586025
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04419150371814862,
+          "log_loss": 0.6455165386562982
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011537527872172548,
+          "log_loss": -0.03380256537179149
+        },
+        "learned_minus_independent": {
+          "brier": -0.042856967506509025,
+          "log_loss": -0.6404175722485318
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.14897921092902267,
+      "discount_boundary": false,
+      "replicate": 11,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17904551276468958,
+          "log_loss": 0.5398484601227785
+        },
+        "independent": {
+          "brier": 0.21036495239902606,
+          "log_loss": 1.1464634669995188
+        },
+        "individual": {
+          "brier": 0.1991531161991978,
+          "log_loss": 0.5818373618885302
+        },
+        "learned": {
+          "brier": 0.16750798489251703,
+          "log_loss": 0.506045894750987
+        },
+        "oracle": {
+          "brier": 0.16617344868087744,
+          "log_loss": 0.5009469283432206
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.044412904358149624,
+          "log_loss": 0.6655664523939672
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011470923937307143,
+          "log_loss": -0.03300833490172339
+        },
+        "learned_minus_independent": {
+          "brier": -0.04376066743692561,
+          "log_loss": -0.6625377792918397
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.21300393493911812,
+      "discount_boundary": false,
+      "replicate": 12,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18062013572628235,
+          "log_loss": 0.5431928456887694
+        },
+        "independent": {
+          "brier": 0.21290987922590082,
+          "log_loss": 1.1727222900788856
+        },
+        "individual": {
+          "brier": 0.19686712135713397,
+          "log_loss": 0.5764537874492296
+        },
+        "learned": {
+          "brier": 0.1691492117889752,
+          "log_loss": 0.510184510787046
+        },
+        "oracle": {
+          "brier": 0.1684969748677512,
+          "log_loss": 0.5071558376849185
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04691717768529549,
+          "log_loss": 0.6614386745135886
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011585152869642512,
+          "log_loss": -0.03446956887657893
+        },
+        "learned_minus_independent": {
+          "brier": -0.046285246721958634,
+          "log_loss": -0.6587788828453677
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.15642506209355073,
+      "discount_boundary": false,
+      "replicate": 13,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1800215213198947,
+          "log_loss": 0.5419234968585722
+        },
+        "independent": {
+          "brier": 0.21472161517221083,
+          "log_loss": 1.166232810827361
+        },
+        "individual": {
+          "brier": 0.19839089753521055,
+          "log_loss": 0.5804863930269136
+        },
+        "learned": {
+          "brier": 0.1684363684502522,
+          "log_loss": 0.5074539279819933
+        },
+        "oracle": {
+          "brier": 0.16780443748691534,
+          "log_loss": 0.5047941363137723
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.045530182231798416,
+          "log_loss": 0.6482782640084225
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.01254548813521672,
+          "log_loss": -0.0377465958903499
+        },
+        "learned_minus_independent": {
+          "brier": -0.045297104536379806,
+          "log_loss": -0.6472333016712073
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16841606281327498,
+      "discount_boundary": false,
+      "replicate": 14,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17958511800003507,
+          "log_loss": 0.5410616919416397
+        },
+        "independent": {
+          "brier": 0.21233673440119816,
+          "log_loss": 1.150548397722497
+        },
+        "individual": {
+          "brier": 0.19742742371030747,
+          "log_loss": 0.5780234944406323
+        },
+        "learned": {
+          "brier": 0.16703962986481835,
+          "log_loss": 0.5033150960512898
+        },
+        "oracle": {
+          "brier": 0.16680655216939974,
+          "log_loss": 0.5022701337140746
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04687595992171956,
+          "log_loss": 0.673776615534134
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.01113994172906771,
+          "log_loss": -0.033794786846842007
+        },
+        "learned_minus_independent": {
+          "brier": -0.04621265773761299,
+          "log_loss": -0.6713892589095043
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.20886379300915997,
+      "discount_boundary": false,
+      "replicate": 15,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1802488596182848,
+          "log_loss": 0.5422688199319077
+        },
+        "independent": {
+          "brier": 0.21532157562683008,
+          "log_loss": 1.17986329199457
+        },
+        "individual": {
+          "brier": 0.19765310420306983,
+          "log_loss": 0.5785965227547316
+        },
+        "learned": {
+          "brier": 0.1691089178892171,
+          "log_loss": 0.5084740330850657
+        },
+        "oracle": {
+          "brier": 0.16844561570511052,
+          "log_loss": 0.5060866764604359
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.045977368595474855,
+          "log_loss": 0.7031568508267867
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011096803175488001,
+          "log_loss": -0.03260875845944844
+        },
+        "learned_minus_independent": {
+          "brier": -0.04584033381439592,
+          "log_loss": -0.7027265715126634
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.16489204988816447,
+      "discount_boundary": false,
+      "replicate": 16,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1812877827600365,
+          "log_loss": 0.5447893984423479
+        },
+        "independent": {
+          "brier": 0.2160313133989444,
+          "log_loss": 1.2149072114955628
+        },
+        "individual": {
+          "brier": 0.19885413273524705,
+          "log_loss": 0.5811896170177339
+        },
+        "learned": {
+          "brier": 0.17019097958454849,
+          "log_loss": 0.5121806399828994
+        },
+        "oracle": {
+          "brier": 0.17005394480346955,
+          "log_loss": 0.5117503606687761
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04470801655799547,
+          "log_loss": 0.6689817900544925
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.009703172573866131,
+          "log_loss": -0.027663159982435626
+        },
+        "learned_minus_independent": {
+          "brier": -0.04216590459023853,
+          "log_loss": -0.6603800672274669
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.13516328723922372,
+      "discount_boundary": false,
+      "replicate": 17,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18003096755474024,
+          "log_loss": 0.5418662868130183
+        },
+        "independent": {
+          "brier": 0.21249369957111264,
+          "log_loss": 1.1745831940580496
+        },
+        "individual": {
+          "brier": 0.19860826687780017,
+          "log_loss": 0.5809560967019212
+        },
+        "learned": {
+          "brier": 0.1703277949808741,
+          "log_loss": 0.5142031268305827
+        },
+        "oracle": {
+          "brier": 0.16778568301311717,
+          "log_loss": 0.505601404003557
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.043243529867615094,
+          "log_loss": 0.653647135914974
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012796780346203851,
+          "log_loss": -0.037681613566402095
+        },
+        "learned_minus_independent": {
+          "brier": -0.043259628077832624,
+          "log_loss": -0.6536709047794402
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.1866169168599216,
+      "discount_boundary": false,
+      "replicate": 18,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17996909168565572,
+          "log_loss": 0.5420965871798983
+        },
+        "independent": {
+          "brier": 0.2104319394172845,
+          "log_loss": 1.1580858783929364
+        },
+        "individual": {
+          "brier": 0.20079408466336432,
+          "log_loss": 0.5867028076704595
+        },
+        "learned": {
+          "brier": 0.16717231133945187,
+          "log_loss": 0.5044149736134962
+        },
+        "oracle": {
+          "brier": 0.1671884095496694,
+          "log_loss": 0.5044387424779624
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.0444944323621832,
+          "log_loss": 0.6916289104448716
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011481839278732614,
+          "log_loss": -0.03377172584179178
+        },
+        "learned_minus_independent": {
+          "brier": -0.04445301053085074,
+          "log_loss": -0.691545814391883
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.17208293384200757,
+      "discount_boundary": false,
+      "replicate": 19,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.1811006790981181,
+          "log_loss": 0.5442451945184584
+        },
+        "independent": {
+          "brier": 0.21407185035023624,
+          "log_loss": 1.2020192830685497
+        },
+        "individual": {
+          "brier": 0.20194545887024706,
+          "log_loss": 0.5889411922874989
+        },
+        "learned": {
+          "brier": 0.1696188398193855,
+          "log_loss": 0.5104734686766667
+        },
+        "oracle": {
+          "brier": 0.16957741798805304,
+          "log_loss": 0.510390372623678
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04563525111782912,
+          "log_loss": 0.6828793691091096
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011284097395448889,
+          "log_loss": -0.03179882335721773
+        },
+        "learned_minus_independent": {
+          "brier": -0.04521274820569665,
+          "log_loss": -0.6806735383339744
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.2050472146126161,
+      "discount_boundary": false,
+      "replicate": 20,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18087144256232593,
+          "log_loss": 0.5438008755721722
+        },
+        "independent": {
+          "brier": 0.2148000933725737,
+          "log_loss": 1.1926755905489288
+        },
+        "individual": {
+          "brier": 0.19799429790733802,
+          "log_loss": 0.5795486713526992
+        },
+        "learned": {
+          "brier": 0.16958734516687704,
+          "log_loss": 0.5120020522149544
+        },
+        "oracle": {
+          "brier": 0.16916484225474457,
+          "log_loss": 0.5097962214398192
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.0448714569376186,
+          "log_loss": 0.6647278879938329
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012309718989321594,
+          "log_loss": -0.036112398095721865
+        },
+        "learned_minus_independent": {
+          "brier": -0.04473640112988131,
+          "log_loss": -0.6643142352156409
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.17168608563273186,
+      "discount_boundary": false,
+      "replicate": 21,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17953924920035075,
+          "log_loss": 0.5410074284978269
+        },
+        "independent": {
+          "brier": 0.21196593134091046,
+          "log_loss": 1.169209265617746
+        },
+        "individual": {
+          "brier": 0.19663734685846004,
+          "log_loss": 0.5760920725329415
+        },
+        "learned": {
+          "brier": 0.16722953021102915,
+          "log_loss": 0.504895030402105
+        },
+        "oracle": {
+          "brier": 0.16709447440329186,
+          "log_loss": 0.5044813776239131
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04536211713306751,
+          "log_loss": 0.6906078480671891
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.010877295819731653,
+          "log_loss": -0.03068545246928811
+        },
+        "learned_minus_independent": {
+          "brier": -0.04461634720342464,
+          "log_loss": -0.6870575502681314
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.2117830150464155,
+      "discount_boundary": false,
+      "replicate": 22,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18082511732254603,
+          "log_loss": 0.5437321597859565
+        },
+        "independent": {
+          "brier": 0.214564168706239,
+          "log_loss": 1.2001042575847998
+        },
+        "individual": {
+          "brier": 0.1997600552113841,
+          "log_loss": 0.5839132655457462
+        },
+        "learned": {
+          "brier": 0.16994782150281437,
+          "log_loss": 0.5130467073166683
+        },
+        "oracle": {
+          "brier": 0.1692020515731715,
+          "log_loss": 0.5094964095176107
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.048561735513206555,
+          "log_loss": 0.6964180534181303
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.008489498083932484,
+          "log_loss": -0.022963927548551255
+        },
+        "learned_minus_independent": {
+          "brier": -0.04608484642604224,
+          "log_loss": -0.6859356088633546
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.2362497512197958,
+      "discount_boundary": false,
+      "replicate": 23,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18159725665134246,
+          "log_loss": 0.5453192871302862
+        },
+        "independent": {
+          "brier": 0.21919260499345222,
+          "log_loss": 1.2082909684450895
+        },
+        "individual": {
+          "brier": 0.20052608389365217,
+          "log_loss": 0.5855581760707378
+        },
+        "learned": {
+          "brier": 0.17310775856740998,
+          "log_loss": 0.522355359581735
+        },
+        "oracle": {
+          "brier": 0.17063086948024567,
+          "log_loss": 0.5118729150269592
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.049807091797502534,
+          "log_loss": 0.7027970606041568
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.009676055478976653,
+          "log_loss": -0.028599206191549653
+        },
+        "learned_minus_independent": {
+          "brier": -0.049001449117659274,
+          "log_loss": -0.6996404932716357
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.20731170878129274,
+      "discount_boundary": false,
+      "replicate": 24,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18248351111566186,
+          "log_loss": 0.5471096329553694
+        },
+        "independent": {
+          "brier": 0.22180890475434448,
+          "log_loss": 1.2181509200354554
+        },
+        "individual": {
+          "brier": 0.19980575775191348,
+          "log_loss": 0.5834225081465269
+        },
+        "learned": {
+          "brier": 0.1728074556366852,
+          "log_loss": 0.5185104267638198
+        },
+        "oracle": {
+          "brier": 0.17200181295684194,
+          "log_loss": 0.5153538594312986
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04589627571854271,
+          "log_loss": 0.6686062764619328
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011427143407360119,
+          "log_loss": -0.03393609804159725
+        },
+        "learned_minus_independent": {
+          "brier": -0.04545767795082817,
+          "log_loss": -0.66689541020314
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.1598665929025047,
+      "discount_boundary": false,
+      "replicate": 25,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18061210059267127,
+          "log_loss": 0.5431595287066545
+        },
+        "independent": {
+          "brier": 0.21464263513613932,
+          "log_loss": 1.1761188408681973
+        },
+        "individual": {
+          "brier": 0.2001067651276155,
+          "log_loss": 0.5842181784725029
+        },
+        "learned": {
+          "brier": 0.16918495718531115,
+          "log_loss": 0.5092234306650573
+        },
+        "oracle": {
+          "brier": 0.1687463594175966,
+          "log_loss": 0.5075125644062645
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.045824433649225116,
+          "log_loss": 0.7014479143704041
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.010929477775727031,
+          "log_loss": -0.03187460946573972
+        },
+        "learned_minus_independent": {
+          "brier": -0.04553830798326053,
+          "log_loss": -0.7001639651174665
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.19684067803305044,
+      "discount_boundary": false,
+      "replicate": 26,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18124051206759834,
+          "log_loss": 0.5446643635744294
+        },
+        "independent": {
+          "brier": 0.21584934227513183,
+          "log_loss": 1.2129537192261561
+        },
+        "individual": {
+          "brier": 0.20073080880169433,
+          "log_loss": 0.5852009364860035
+        },
+        "learned": {
+          "brier": 0.1703110342918713,
+          "log_loss": 0.5127897541086897
+        },
+        "oracle": {
+          "brier": 0.17002490862590672,
+          "log_loss": 0.511505804855752
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04190528822091466,
+          "log_loss": 0.6378190247215296
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012847944895231361,
+          "log_loss": -0.03638273050884833
+        },
+        "learned_minus_independent": {
+          "brier": -0.04118394872089556,
+          "log_loss": -0.6339687088732404
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.22475441853084954,
+      "discount_boundary": false,
+      "replicate": 27,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17778414873327472,
+          "log_loss": 0.5371929969364345
+        },
+        "independent": {
+          "brier": 0.20612015255893892,
+          "log_loss": 1.1347789753008266
+        },
+        "individual": {
+          "brier": 0.1960614159700869,
+          "log_loss": 0.5759964606604673
+        },
+        "learned": {
+          "brier": 0.16493620383804336,
+          "log_loss": 0.5008102664275862
+        },
+        "oracle": {
+          "brier": 0.16421486433802426,
+          "log_loss": 0.4969599505792969
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04452943007937765,
+          "log_loss": 0.6317121060560266
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.012797376345969308,
+          "log_loss": -0.03821917474945269
+        },
+        "learned_minus_independent": {
+          "brier": -0.044401138563344794,
+          "log_loss": -0.6311416938009746
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.20188395853615343,
+      "discount_boundary": false,
+      "replicate": 28,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.17935751201686623,
+          "log_loss": 0.5402834162881107
+        },
+        "independent": {
+          "brier": 0.2109612742342417,
+          "log_loss": 1.1332059353396327
+        },
+        "individual": {
+          "brier": 0.20079670096029134,
+          "log_loss": 0.5859604231366659
+        },
+        "learned": {
+          "brier": 0.16656013567089692,
+          "log_loss": 0.502064241538658
+        },
+        "oracle": {
+          "brier": 0.16643184415486406,
+          "log_loss": 0.5014938292836061
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    },
+    {
+      "comparisons": {
+        "independent_minus_oracle": {
+          "brier": 0.04678187477991358,
+          "log_loss": 0.6857533912719059
+        },
+        "learned_minus_arithmetic_mean": {
+          "brier": -0.011103536676762032,
+          "log_loss": -0.0325079870614986
+        },
+        "learned_minus_independent": {
+          "brier": -0.04639460403503745,
+          "log_loss": -0.6843765423693482
+        }
+      },
+      "condition": "primary-n10-rho05-a05",
+      "discount": 0.15951664792693232,
+      "discount_boundary": false,
+      "replicate": 29,
+      "scores": {
+        "arithmetic_mean": {
+          "brier": 0.18221703589085367,
+          "log_loss": 0.5468166824666256
+        },
+        "independent": {
+          "brier": 0.2175081032491291,
+          "log_loss": 1.1986852377744752
+        },
+        "individual": {
+          "brier": 0.20317063707090838,
+          "log_loss": 0.5908358873573926
+        },
+        "learned": {
+          "brier": 0.17111349921409164,
+          "log_loss": 0.514308695405127
+        },
+        "oracle": {
+          "brier": 0.1707262284692155,
+          "log_loss": 0.5129318465025693
+        },
+        "prior": {
+          "brier": 0.25,
+          "log_loss": 0.6931471805599453
+        }
+      }
+    }
+  ],
+  "schema_version": 1,
+  "source_sha256": {
+    "archive.py": "2f7138bec37be77258917267ad905ea70297460c04b01f4248716730dd869df6",
+    "evaluate.py": "d9ac3c35763eb6a0aebf17fd0ab249287a57b73888cc6b1f2d7b0b36e135f7fb",
+    "experiment.py": "c65d1f2d06d902eb16f442d5f4ee23db959006981462e6775baf3dcbbbe9df68",
+    "groups.py": "99d2765941f113fd47cc15861d4fc975bcb80768f589b677df1a6ab13a7cc5a6",
+    "ledger.py": "5e066bc506c2c5f9a1f4f0ee13a639d305440822979c97246c4fd30238d3da19",
+    "model.py": "7cdb2a2702c46599ba90f659667787894dd2d53d17cf170371ec3ab594720674",
+    "simulate.py": "eb395735b9468d8901de5d02f04db48d5377df69dfd65ba5a1fce06a060f60bf"
+  },
+  "status": "locked_synthetic_evaluation"
+}

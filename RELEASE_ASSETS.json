@@ -1,0 +1,77 @@
+{
+  "assets": [
+    {
+      "bytes": 98348925,
+      "name": "production-primary-v1.jsonl.gz",
+      "release": "primary-v1",
+      "sha256": "b10e6512a35ab960e6cb96f02db61b174888508b04f48848f531cd06e548f323"
+    },
+    {
+      "bytes": 169424930,
+      "name": "stress-exchangeable-m1000-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "b33ff21bb83fb54d0501f84a3865e4d0d45e9f1d658c56a4060aa0d01b8afcaa"
+    },
+    {
+      "bytes": 131244272,
+      "name": "stress-exchangeable-m200-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "054d7c8537c54fac42fd50fe8d6767fb2bc19ae7a62c362e161bd2e72438ca5d"
+    },
+    {
+      "bytes": 122523771,
+      "name": "stress-exchangeable-m50-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "cdf9c404be5988f876b2ade87b07a24ffc695790a4986be7937f8d6f578dfcf0"
+    },
+    {
+      "bytes": 108900874,
+      "name": "stress-groups-m1000-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "c700f96d00e4d75794fb7bff0b35a79f1323fd882cd8fad175a5d7f70ce87b70"
+    },
+    {
+      "bytes": 97651528,
+      "name": "stress-groups-m200-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "d2be04ab2839814e9a7f5876353fe734d553d2319413aec88bac322fb4c8c145"
+    },
+    {
+      "bytes": 95132081,
+      "name": "stress-groups-m50-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "3b78b17e1b8c047e35dae5e3f1b22b0f9b881dd79d32b1756fc5471af2c61945"
+    },
+    {
+      "bytes": 162671436,
+      "name": "stress-groups-m5000-v1.jsonl.gz",
+      "release": "stress-v1",
+      "sha256": "47b08813cbfb358b354460b3557937779e50709749c4f704fea500c66f5ec267"
+    },
+    {
+      "bytes": 50994374,
+      "name": "source-inference-primary-v1.jsonl.gz",
+      "release": "source-inference-v1",
+      "sha256": "e8370499a5fbbdd2ded61939a1eccb94a4f608172a124deed1ce8857f6767918"
+    },
+    {
+      "bytes": 83803064,
+      "name": "source-inference-sensitivity-m100-v1.jsonl.gz",
+      "release": "source-inference-v1",
+      "sha256": "90c0c52a8f801e9723e5a7746db6b96b777259029d87c057e5544e31b2ba5ac6"
+    },
+    {
+      "bytes": 109693922,
+      "name": "source-inference-sensitivity-m2000-v1.jsonl.gz",
+      "release": "source-inference-v1",
+      "sha256": "ccc3c3bf46a4206b92157f87e076ea730cfd25554f2be0eb06c6c87acccf4186"
+    },
+    {
+      "bytes": 88056468,
+      "name": "source-inference-sensitivity-m400-v1.jsonl.gz",
+      "release": "source-inference-v1",
+      "sha256": "0f32c745d0fb3dffc16f832dd3fc5b0a2abdc2bdc93fc923ba712a4cf4a1e282"
+    }
+  ],
+  "schema_version": 1
+}

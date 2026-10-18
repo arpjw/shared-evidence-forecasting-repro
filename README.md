@@ -195,11 +195,11 @@ The stress suite is exploratory, with only eight or twelve independent fits
 per cell and no multiplicity adjustment across cells. The later source-inference
 primary test is a fresh synthetic follow-up, not a replication of the original
 primary question. None of these experiments establishes performance on human
-or AI forecasts. The article remains a draft and has not been published to the
-website.
+or AI forecasts. The companion Writing article presents these results in
+conversational form.
 
 ## Public snapshot
 
-This repository is a clean export of the validated `source-inference-v1` research state (`54df55506fd3d311888839667350636881b25177`). It has no private repository history. Full compressed synthetic ledgers are attached to the `primary-v1`, `stress-v1`, and `source-inference-v1` releases. Their byte sizes and SHA256 digests are in [`RELEASE_ASSETS.json`](RELEASE_ASSETS.json). The same verifier code and frozen configurations are here.
+This repository is a clean export of the validated `source-inference-v1` research state. It has no private repository history. Full compressed synthetic ledgers are attached to the `primary-v1`, `stress-v1`, and `source-inference-v1` releases. Their byte sizes and SHA256 digests are in [`RELEASE_ASSETS.json`](RELEASE_ASSETS.json). The same verifier code and frozen configurations are here.
 
 The repository is published without a reuse license unless a license is added explicitly.
